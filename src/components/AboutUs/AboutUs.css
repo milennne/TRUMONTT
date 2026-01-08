@@ -1,0 +1,200 @@
+/* Main Section Container */
+.about-us-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Background Image Area */
+.about-us-bg {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.about-us-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark overlay */
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.about-us-content {
+    color: #fff;
+    max-width: 800px;
+    padding: 40px 20px;
+}
+
+.small-title {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a90e2;
+    /* A lighter blue accent text or match corporate depending on look */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: 1.2;
+}
+
+.description-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+    max-width: 700px;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    /* Slight radius or 0 for sharp corporate look */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    /* Brighter blue for call to action */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #357abd;
+}
+
+.btn-secondary {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+    color: var(--trumont-blue);
+}
+
+/* Cards Section */
+.cards-container {
+    display: flex;
+    width: 100%;
+    margin-top: -80px;
+    /* Overlap effect */
+    position: relative;
+    z-index: 10;
+    margin-bottom: 50px;
+    gap: 0;
+    /* Consistent with some corporate layouts, or use gap */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-item {
+    flex: 1;
+    padding: 60px 40px;
+}
+
+/* Mission Card (Blue) */
+.mission-card {
+    background-color: var(--trumont-blue);
+    color: #fff;
+}
+
+.mission-card h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.mission-card p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn-outline-light {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background: #fff;
+    color: var(--trumont-blue);
+}
+
+/* Vision Card (White) */
+.vision-card {
+    background-color: #fff;
+    color: var(--trumont-blue);
+}
+
+.vision-card h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+    display: inline-block;
+    color: var(--trumont-blue);
+}
+
+.vision-card p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .cards-container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

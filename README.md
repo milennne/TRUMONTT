@@ -47,7 +47,7 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/milennne/TRUMONTT.git
    cd trumontt
    ```
 
@@ -69,7 +69,7 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
 
 ## 🚧 Estado del Proyecto
 
-Actualmente, el proyecto se encuentra en **etapa de desarrollo**. Se han implementado las secciones principales (Header, Carrusel, Nosotros, Servicios) y se continúa trabajando en la integración de nuevas funcionalidades y secciones como el formulario de contacto y el portafolio de proyectos.
+Actualmente, el proyecto se encuentra en **etapa de desarrollo**. Se han implementado las secciones principales (Header, Carrusel, Nosotros, Servicios) y se continúa trabajando en la integración de nuevas funcionalidades y secciones como últimos proyectos y cantáctanos.
 
 ---
 

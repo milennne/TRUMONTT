@@ -1,0 +1,228 @@
+.clients-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    overflow: hidden;
+}
+
+.clients-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--trumont-blue);
+    margin-bottom: 60px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 250px;
+    perspective: 1200px;
+    /* Enhanced depth perception */
+}
+
+/* Carousel Track */
+.carousel-track {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Base Slide Style */
+.client-slide {
+    position: absolute;
+    width: 240px;
+    /* Increased from 200px */
+    height: 150px;
+    /* Increased from 120px */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 15px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 0;
+    /* Ensure 3D transforms work */
+    transform-style: preserve-3d;
+}
+
+.client-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.4s;
+}
+
+/* Active Slide (Center) */
+.client-slide.active {
+    transform: translateX(0) scale(1.3);
+    z-index: 20;
+    opacity: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(17, 24, 41, 0.1);
+    pointer-events: none;
+}
+
+.client-slide.active .client-logo {
+    filter: grayscale(0%);
+}
+
+/* Level 1 Neighbors (Visual Outer Side) */
+.client-slide.prev {
+    transform: translateX(-260px) scale(0.9) translateZ(-20px);
+    /* Moved closer from -310px */
+    z-index: 10;
+    opacity: 0.9;
+    filter: blur(0px);
+}
+
+.client-slide.next {
+    transform: translateX(260px) scale(0.9) translateZ(-20px);
+    /* Moved closer from 310px */
+    z-index: 10;
+    opacity: 0.9;
+}
+
+/* Level 2 Neighbors (Visual Inner Gap) */
+.client-slide.far-prev {
+    transform: translateX(-130px) scale(0.7) translateZ(-100px);
+    /* Moved closer from -155px */
+    z-index: 5;
+    opacity: 0.6;
+}
+
+.client-slide.far-next {
+    transform: translateX(130px) scale(0.7) translateZ(-100px);
+    /* Moved closer from 155px */
+    z-index: 5;
+    opacity: 0.6;
+}
+
+/* Hidden Items */
+.client-slide.hidden {
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: #ccc;
+    cursor: pointer;
+    z-index: 30;
+    padding: 0;
+    position: absolute;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.nav-arrow.left {
+    left: 0px;
+    /* Moved to edge from 20px */
+}
+
+.nav-arrow.right {
+    right: 0px;
+    /* Moved to edge from 20px */
+}
+
+.nav-arrow:hover {
+    color: var(--trumont-blue);
+    transform: scale(1.1);
+}
+
+/* Dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 50px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dot.active {
+    background-color: var(--trumont-blue);
+    transform: scale(1.3);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .client-slide {
+        width: 180px;
+        height: 110px;
+    }
+
+    .client-slide.active {
+        transform: translateX(0) scale(1.2);
+    }
+
+    .client-slide.prev {
+        transform: translateX(-200px) scale(0.9);
+    }
+
+    .client-slide.next {
+        transform: translateX(200px) scale(0.9);
+    }
+
+    .client-slide.far-prev {
+        transform: translateX(-350px) scale(0.7);
+    }
+
+    .client-slide.far-next {
+        transform: translateX(350px) scale(0.7);
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* On mobile, simplify to 1 main item + partial neighbors */
+    .carousel-track {
+        max-width: 100%;
+    }
+
+    .client-slide {
+        width: 140px;
+        height: 90px;
+    }
+
+    .client-slide.active {
+        transform: translateX(0) scale(1.1);
+        z-index: 20;
+    }
+
+    .client-slide.prev {
+        transform: translateX(-120px) scale(0.8);
+        opacity: 0.4;
+    }
+
+    .client-slide.next {
+        transform: translateX(120px) scale(0.8);
+        opacity: 0.4;
+    }
+
+    .client-slide.far-prev,
+    .client-slide.far-next {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

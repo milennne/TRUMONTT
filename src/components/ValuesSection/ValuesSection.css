@@ -1,0 +1,135 @@
+/* Main Container */
+.values-section-container {
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    /* Adjust as needed */
+    flex-wrap: wrap;
+}
+
+/* Common Styles for Columns */
+.split-column {
+    flex: 1;
+    min-width: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-overlay {
+    width: 100%;
+    height: 100%;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overlay Colors */
+.dark-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    /* Darker for Team section to make white text pop */
+}
+
+/* Blue overlay based on corporate color, slightly transparent */
+.blue-overlay {
+    background: rgba(17, 24, 41, 0.85);
+    /* #111829 with opacity */
+    /* Or lighter blue if needed? Reference image looked like a standard corporate blue */
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Text Styles */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.section-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.dark-text {
+    /* Actually reference image shows dark text title on the right? 
+     Wait, if the background is blue overlay, text should likely be white.
+     Let's stick to white for readablity on blue overlay unless the user wants light blue bg.
+     "azul corporativo" usually means dark blue #111829. 
+     If we use #111829 overlay, text MUST be white.
+  */
+    color: #fff;
+}
+
+/* Button override */
+.contact-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #4a90e2;
+    /* Accent blue */
+    border-color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #357abd;
+}
+
+/* Values List */
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.value-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #fff;
+    /* White text for values on blue bg */
+    font-weight: 500;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .values-section-container {
+        flex-direction: column;
+    }
+
+    .split-column {
+        min-height: 400px;
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}

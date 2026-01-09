@@ -15,26 +15,7 @@ const ContactUs = () => {
                 <div className="contact-layout">
                     {/* Left Column: Map (Desktop) / Bottom (Mobile) */}
                     {/* Note: User requested Map Left, Form Right on Desktop. Form First on Mobile. 
-                        We will use flex-direction: column-reverse on mobile to put layout: [Map, Form] -> [Form, Map] visual order?
-                        Wait, user said: "Tablet y mobile: todo en una columna (primero el formulario, luego el mapa)"
-                        So HTML order should probably be Form then Map for mobile flow?
-                        OR use flex-order. 
-                        Let's check: Desktop: Map (Left), Form (Right).
-                        Mobile: Form (Top), Map (Bottom).
                         
-                        If I put Map first in HTML:
-                        Desktop: Flex row -> Map | Form (Correct)
-                        Mobile: Flex col -> Map / Form (Incorrect, user wants Form first)
-                        
-                        If I put Form first in HTML:
-                        Desktop: Flex row reverse? or just Flex row and Form is first? User wants Map Left.
-                        So: HTML = [Form, Map]. Desktop: flex-direction: row-reverse (Map becomes right? No).
-                        
-                        Better: HTML = [Map, Form].
-                        Desktop: standard row.
-                        Mobile: flex-direction: column-reverse.
-                        (Map is first child, Form is second child)
-                        col-reverse makes Form top, Map bottom. Correct.
                     */}
                     <div className="map-column">
                         <iframe

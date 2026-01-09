@@ -1,0 +1,160 @@
+.contact-section {
+    padding: 80px 0;
+    background-color: #f9fafb;
+    /* Light grey background for section distinction */
+}
+
+.section-header {
+    margin-bottom: 50px;
+    text-align: center;
+    /* Generally centered headers look good for Contact, or left aligned? User didn't specify alignment, but typical is center or matching previous. FeaturedProjects was left. Let's stick to consistent Left or Center. FeaturedProjects was Left. Let's try Left to match corporate flow, or Center for "Final" section. Let's go Left to match FeaturedProjects/Header style, or Center for emphasis. The user prompt layout description just said "Encabezado". Let's assume standard corporate Left alignment if previous sections were left. */
+    text-align: left;
+}
+
+.section-header .main-title {
+    color: #111829;
+    margin-bottom: 10px;
+    /* Font size inherited or refined */
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Layout */
+.contact-layout {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping */
+    gap: 40px;
+    align-items: stretch;
+    /* Make both columns equal height if possible */
+}
+
+.map-column {
+    flex: 1;
+    min-width: 300px;
+    /* Base width */
+    height: 500px;
+    /* Fixed height for visual balance with form */
+    /* Map styling wrapper */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.google-map-frame {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.form-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Mobile Reordering: Form First, Map Second. HTML is [Map, Form]. Grid/Flex tricks. */
+@media (max-width: 900px) {
+    .contact-layout {
+        flex-direction: column-reverse;
+        /* Form (2nd) becomes Top, Map (1st) becomes Bottom */
+    }
+
+    .map-column {
+        height: 350px;
+        /* Slightly smaller map on mobile */
+    }
+}
+
+/* Form Styles */
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    /* Soft shadow */
+    border: 1px solid #eef0f2;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    /* Rounded corners */
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    background-color: #fcfcfc;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: none;
+    /* Disable resizing completely */
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--trumont-blue);
+    box-shadow: 0 0 0 3px rgba(17, 24, 41, 0.1);
+    background-color: white;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* Button */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--trumont-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    letter-spacing: 0.5px;
+}
+
+.btn-submit:hover {
+    background-color: #1a253a;
+    /* Slightly darker */
+    transform: translateY(-2px);
+}

@@ -6,6 +6,7 @@ import Services from './components/Services/Services'
 import ValuesSection from './components/ValuesSection/ValuesSection'
 import ClientsCarousel from './components/ClientsCarousel/ClientsCarousel'
 import FeaturedProjects from './components/FeaturedProjects/FeaturedProjects'
+import ContactUs from './components/ContactUs/ContactUs'
 import './App.css'
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
       <ValuesSection />
       <ClientsCarousel />
       <FeaturedProjects />
-      <main style={{ minHeight: '80vh', padding: '20px' }}>
+      <ContactUs />
+      <main style={{ minHeight: '10vh', padding: '20px' }}>
         <div className="container">
           {/* Main content can follow here */}
         </div>

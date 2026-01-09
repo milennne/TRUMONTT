@@ -32,22 +32,25 @@
     padding: 40px 20px;
 }
 
-.small-title {
+/* Scoped titles for About Us Section to ensure visibility on dark overlay */
+.about-us-section .small-title {
     display: block;
     font-size: 1rem;
     font-weight: 600;
-    color: #4a90e2;
-    /* A lighter blue accent text or match corporate depending on look */
+    color: #ffffff;
+    /* White for contrast */
     text-transform: uppercase;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
-.main-title {
+.about-us-section .main-title {
     font-size: 3.5rem;
     font-weight: 700;
     margin: 0 0 20px;
     line-height: 1.2;
+    color: #ffffff;
+    /* Explicitly white */
 }
 
 .description-text {

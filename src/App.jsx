@@ -5,6 +5,7 @@ import AboutUs from './components/AboutUs/AboutUs'
 import Services from './components/Services/Services'
 import ValuesSection from './components/ValuesSection/ValuesSection'
 import ClientsCarousel from './components/ClientsCarousel/ClientsCarousel'
+import FeaturedProjects from './components/FeaturedProjects/FeaturedProjects'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Services />
       <ValuesSection />
       <ClientsCarousel />
+      <FeaturedProjects />
       <main style={{ minHeight: '80vh', padding: '20px' }}>
         <div className="container">
           {/* Main content can follow here */}

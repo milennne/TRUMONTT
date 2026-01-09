@@ -56,7 +56,12 @@ const HeroCarousel = () => {
     return (
         <div className="hero-carousel">
             {/* Slides */}
-            <div className="carousel-slide" style={{ backgroundImage: `url(${slides[currentIndex].src})` }}>
+            <div
+                className="carousel-slide"
+                style={{ backgroundImage: `url(${slides[currentIndex].src})` }}
+                role="img"
+                aria-label={slides[currentIndex].alt}
+            >
                 <div className="carousel-overlay">
                     <div className="carousel-caption">
                         <h2 className="slide-title">{slides[currentIndex].title}</h2>

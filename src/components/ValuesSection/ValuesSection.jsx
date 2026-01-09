@@ -7,7 +7,12 @@ const ValuesSection = () => {
     return (
         <section className="values-section-container">
             {/* Left Column: Team / Contact */}
-            <div className="split-column team-column" style={{ backgroundImage: `url(${teamImage})` }}>
+            <div
+                className="split-column team-column"
+                style={{ backgroundImage: `url(${teamImage})` }}
+                role="img"
+                aria-label="Equipo de profesionales Trumontt"
+            >
                 <div className="column-overlay dark-overlay">
                     <div className="content-wrapper team-content">
                         <h2 className="section-title white-text">Únete a Nuestro Equipo</h2>
@@ -21,7 +26,12 @@ const ValuesSection = () => {
             </div>
 
             {/* Right Column: Values */}
-            <div className="split-column values-column" style={{ backgroundImage: `url(${valuesImage})` }}>
+            <div
+                className="split-column values-column"
+                style={{ backgroundImage: `url(${valuesImage})` }}
+                role="img"
+                aria-label="Valores corporativos Trumontt"
+            >
                 <div className="column-overlay blue-overlay">
                     <div className="content-wrapper values-content">
                         <h2 className="section-title dark-text">Nuestros Valores Organizacionales</h2>

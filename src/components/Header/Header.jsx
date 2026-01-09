@@ -21,10 +21,10 @@ const Header = () => {
             {/* Main Navbar */}
             <div className="navbar">
                 <div className="container navbar-content">
-                    {/* Logo Section */}
-                    <div className="logo-section">
-                        <img src={logo} alt="Trumont Group Logo" className="logo-image" />
-                    </div>
+                    {/* Logo Section - H1 for SEO */}
+                    <h1 className="logo-section" style={{ margin: 0, padding: 0, fontSize: 0 }}>
+                        <img src={logo} alt="Trumontt Group - Construcción y Gestión Inmobiliaria" className="logo-image" />
+                    </h1>
 
                     {/* Navigation Menu */}
                     <nav className="nav-menu">

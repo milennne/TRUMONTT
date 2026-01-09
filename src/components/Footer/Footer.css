@@ -1,0 +1,211 @@
+.footer-section {
+    background-color: #111829;
+    /* Trumontt Dark Blue */
+    color: #e5e7eb;
+    padding-top: 60px;
+    font-size: 0.95rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Brand Column */
+.brand-col {
+    max-width: 350px;
+}
+
+.footer-logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    /* Rounded corners as requested */
+}
+
+.footer-description {
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-schedule {
+    border-left: 3px solid var(--trumont-blue);
+    /* Accent line using variable if defined, or we can use specific blue */
+    border-left: 3px solid #3b82f6;
+    padding-left: 15px;
+}
+
+.footer-schedule strong {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.footer-schedule span {
+    color: #d1d5db;
+}
+
+/* Contact Column */
+.footer-title {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 3px;
+    background-color: #3b82f6;
+    /* Accent Blue */
+    border-radius: 2px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.contact-list .icon {
+    font-size: 1.1rem;
+    margin-top: 2px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    /* WhatsApp Green */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #20BA56;
+}
+
+/* Social Column */
+.location-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #d1d5db;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #9ca3af;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #3b82f6;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Sub-footer code */
+.sub-footer {
+    background-color: #0b101b;
+    /* Darker shade */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sub-footer p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .footer-col {
+        flex: 100%;
+        /* Stack on tablet/mobile if needed, or 50% on tablet. User asked for 2 col on tablet */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .footer-col {
+        flex: 0 0 calc(50% - 20px);
+        /* 2 columns on tablet */
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand-col {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        margin: 0 auto 20px auto;
+    }
+
+    .footer-schedule {
+        border-left: none;
+        border-top: 3px solid #3b82f6;
+        padding-top: 15px;
+        padding-left: 0;
+        display: inline-block;
+    }
+
+    .contact-list li {
+        justify-content: center;
+    }
+
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

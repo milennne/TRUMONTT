@@ -32,8 +32,12 @@ La aplicación se ha modularizado completamente en `src/components/`:
 5.  **Values & Team**: Layout dividido resaltando el equipo humano y valores corporativos.
 6.  **Clients Carousel**: Slider infinito con efecto 3D para mostrar partners y clientes.
 7.  **Featured Projects**: Carrusel personalizado de proyectos destacados con overlay interactivo y lógica sin espacios vacíos.
-8.  **Contact Us**: Sección funcional con integración de Google Maps (iframe) y formulario de contacto validado.
-9.  **Footer**: Pie de página de 3 columnas (Marca, Contacto Directo, Redes Sociales) con enlaces funcionales a WhatsApp, Teléfono y Correo.
+8.  **Projects List & Detail**:
+    *   **Listado General**: Página `/projects` con diseño en zig-zag alternado para visualización elegante.
+    *   **Detalle de Proyecto**: Páginas dinámicas `/projects/:slug` con galería de fotos (object-fit: contain) y ficha técnica detallada.
+    *   **Navegación**: Enrutamiento SPA con `react-router-dom` y scroll automático inteligente (`ScrollToAnchor`).
+9.  **Contact Us**: Sección funcional con integración de Google Maps (iframe) y formulario de contacto validado.
+10. **Footer**: Pie de página de 3 columnas (Marca, Contacto Directo, Redes Sociales) con enlaces funcionales a WhatsApp, Teléfono y Correo.
 
 ---
 

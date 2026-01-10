@@ -2,6 +2,8 @@ import React from 'react';
 import './Header.css';
 import logo from '../../assets/LogoTrumontt.png';
 
+import { useLocation } from 'react-router-dom';
+
 /**
  * Header Component
  * 
@@ -9,6 +11,9 @@ import logo from '../../assets/LogoTrumontt.png';
  * Designed to be professional, corporate, and clean.
  */
 const Header = () => {
+    const location = useLocation();
+    const isHome = location.pathname === '/';
+
     return (
         <header className="header-container">
             {/* Top Bar with Address */}
@@ -21,12 +26,20 @@ const Header = () => {
             {/* Main Navbar */}
             <div className="navbar">
                 <div className="container navbar-content">
-                    {/* Logo Section - H1 for SEO */}
-                    <h1 className="logo-section" style={{ margin: 0, padding: 0, fontSize: 0 }}>
-                        <a href="/#inicio" aria-label="Volver al inicio">
-                            <img src={logo} alt="Trumontt Group - Construcción y Gestión Inmobiliaria" className="logo-image" />
-                        </a>
-                    </h1>
+                    {/* Logo Section - H1 on Home, Div elsewhere for SEO hierarchy */}
+                    {isHome ? (
+                        <h1 className="logo-section" style={{ margin: 0, padding: 0, fontSize: 0 }}>
+                            <a href="/#inicio" aria-label="Volver al inicio">
+                                <img src={logo} alt="Trumontt Group - Construcción y Gestión Inmobiliaria" className="logo-image" />
+                            </a>
+                        </h1>
+                    ) : (
+                        <div className="logo-section" style={{ margin: 0, padding: 0, fontSize: 0 }}>
+                            <a href="/#inicio" aria-label="Volver al inicio">
+                                <img src={logo} alt="Trumontt Group - Construcción y Gestión Inmobiliaria" className="logo-image" />
+                            </a>
+                        </div>
+                    )}
 
                     {/* Navigation Menu */}
                     <nav className="nav-menu">

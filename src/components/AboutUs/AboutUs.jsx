@@ -4,7 +4,7 @@ import bgImage from '../../assets/quienessomos.jpg';
 
 const AboutUs = () => {
     return (
-        <section className="about-us-section">
+        <section id="nosotros" className="about-us-section">
             {/* Background with Overlay */}
             <div className="about-us-bg" style={{ backgroundImage: `url(${bgImage})` }}>
                 <div className="about-us-overlay">

@@ -54,7 +54,7 @@ const HeroCarousel = () => {
     };
 
     return (
-        <div className="hero-carousel">
+        <div id="inicio" className="hero-carousel">
             {/* Slides */}
             <div
                 className="carousel-slide"

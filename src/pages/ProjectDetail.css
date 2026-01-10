@@ -1,0 +1,114 @@
+.project-detail-page {
+    padding: 100px 0 60px;
+    /* Space for fixed header */
+    background-color: #fff;
+    min-height: 80vh;
+}
+
+.project-detail-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--trumont-blue, #111829);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease;
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+    color: #0056b3;
+}
+
+.project-header {
+    margin-bottom: 40px;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    color: #111829;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.project-location {
+    color: #6b7280;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Info Grid */
+.project-info-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Content | Metadata sidebar */
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.info-content {
+    line-height: 1.8;
+    color: #374151;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+.info-sidebar {
+    background-color: #f9fafb;
+    padding: 30px;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+.meta-item {
+    margin-bottom: 25px;
+}
+
+.meta-item:last-child {
+    margin-bottom: 0;
+}
+
+.meta-label {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #9ca3af;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.meta-value {
+    display: block;
+    font-size: 1.1rem;
+    color: #111829;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-info-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .info-sidebar {
+        order: -1;
+        /* Show metadata first on mobile? Or keep bottom? User said "Debajo, la información...". Standard is usually Sidebar top on mobile or after. Let's keep it after for now as reading flow.*/
+        order: 0;
+    }
+}

@@ -1,0 +1,122 @@
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    /* Generous spacing as requested */
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+/* Zig-Zag Layout Logic */
+/* Odd items (1, 3, 5...): Image Left, Text Right (Default Flex direction) */
+.project-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+/* Even items (2, 4, 6...): Image Right, Text Left */
+.project-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-img-wrapper {
+    flex: 1;
+    height: 400px;
+    /* Substantial height for professional look */
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f3f4f6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    /* Soft corporate shadow */
+}
+
+.project-list-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* As requested explicitly */
+    transition: transform 0.5s ease;
+}
+
+.project-item:hover .project-list-img {
+    transform: scale(1.03);
+    /* Subtle zoom on hover */
+}
+
+.project-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-list-title {
+    color: #111829;
+    /* Corporate Blue */
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;
+}
+
+/* Decoration line under title */
+.project-list-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--trumont-blue, #111829);
+    border-radius: 2px;
+}
+
+.project-content p {
+    color: #4b5563;
+    /* Grey text */
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .project-item {
+        gap: 40px;
+    }
+
+    .project-img-wrapper {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-list {
+        gap: 60px;
+    }
+
+    .project-item,
+    .project-item:nth-child(even),
+    .project-item:nth-child(odd) {
+        flex-direction: column;
+        /* Stack on mobile: Image top, Text bottom */
+    }
+
+    .project-img-wrapper {
+        width: 100%;
+        height: 250px;
+    }
+
+    .project-content {
+        width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+
+    .project-list-title {
+        font-size: 1.75rem;
+    }
+}

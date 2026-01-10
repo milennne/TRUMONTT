@@ -24,7 +24,7 @@ export const featuredProjects = [
         title: "Implementación de cuadros de mando",
         location: "1283 Av. Javier Prado Oeste",
         image: proyecto3,
-        slug: "implementacion-cuadros-mando"
+        slug: "implementacion-cuadros-de-mando"
     },
     {
         id: 4,

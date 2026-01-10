@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './FeaturedProjects.css';
 import { featuredProjects } from '../../data/projects';
 
@@ -98,9 +99,9 @@ const FeaturedProjects = () => {
                                                         {project.location}
                                                     </p>
                                                     <div className="action-area">
-                                                        <a href={`/projects/${project.slug}`} className="btn-view-project">
+                                                        <Link to={`/projects/${project.slug}`} className="btn-view-project">
                                                             VER PROYECTO
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>

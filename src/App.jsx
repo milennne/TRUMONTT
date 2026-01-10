@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
 import HeroCarousel from './components/HeroCarousel/HeroCarousel'
 import AboutUs from './components/AboutUs/AboutUs'
@@ -8,22 +8,40 @@ import ClientsCarousel from './components/ClientsCarousel/ClientsCarousel'
 import FeaturedProjects from './components/FeaturedProjects/FeaturedProjects'
 import ContactUs from './components/ContactUs/ContactUs'
 import Footer from './components/Footer/Footer'
+import ProjectDetail from './pages/ProjectDetail'
+import Projects from './pages/Projects'
+import ScrollToAnchor from './components/ScrollToAnchor'
 import './App.css'
+
+// Internal Home Component to keep App clean
+const Home = () => (
+  <>
+    <HeroCarousel />
+    <div className="section-separator"></div>
+    <AboutUs />
+    <Services />
+    <ValuesSection />
+    <ClientsCarousel />
+    <FeaturedProjects />
+    <ContactUs />
+  </>
+);
 
 function App() {
   return (
-    <>
-      <Header />
-      <HeroCarousel />
-      <div className="section-separator"></div>
-      <AboutUs />
-      <Services />
-      <ValuesSection />
-      <ClientsCarousel />
-      <FeaturedProjects />
-      <ContactUs />
-      <Footer />
-    </>
+    <Router>
+      <ScrollToAnchor />
+      <div className="app-wrapper">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:slug" element={<ProjectDetail />} />
+          {/* Fallback route could go here */}
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

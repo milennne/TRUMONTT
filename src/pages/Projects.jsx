@@ -7,6 +7,7 @@ import headerBg from '../assets/construccion.jpg';
 const Projects = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'Nuestros Proyectos | Trumontt Group';
     }, []);
 
     return (

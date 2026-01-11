@@ -7,6 +7,7 @@ import headerBg from '../assets/business.png'; // Using a professional backgroun
 const Services = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = 'Nuestros Servicios | Trumontt Group';
     }, []);
 
     return (

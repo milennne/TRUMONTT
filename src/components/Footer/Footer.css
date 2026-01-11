@@ -152,6 +152,39 @@
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.powered-by {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    /* Space between text and logo */
+}
+
+.powered-by span {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    font-weight: 400;
+}
+
+.chiru-logo {
+    height: 24px;
+    /* Perfectly aligned height */
+    width: auto;
+    opacity: 0.8;
+    /* Make it white/greyish to blend if it's colored, or adjust based on actual image */
+    transition: all 0.3s ease;
+    display: block;
+    /* Removes grid gaps */
+}
+
+.chiru-logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    /* Restore original color on hover if desired, or keep white */
+}
+
 .sub-footer p {
     margin: 0;
     color: #6b7280;

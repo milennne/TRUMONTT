@@ -1,35 +1,29 @@
 import React, { useEffect } from 'react';
 import ProjectsList from '../components/ProjectsList/ProjectsList';
 import { projectsList } from '../data/projectsList';
+import './Projects.css';
+import headerBg from '../assets/construccion.jpg';
 
 const Projects = () => {
-    // Ensure we start at the top of the page
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
     return (
-        <div style={{ padding: '100px 0 60px' }}>
-            <div className="container">
-                <div style={{ marginBottom: '60px', textAlign: 'center' }}>
-                    <h1 style={{
-                        color: '#111829',
-                        fontSize: '3rem',
-                        marginBottom: '20px',
-                        fontWeight: '800'
-                    }}>
-                        Nuestros Proyectos
-                    </h1>
-                    <p style={{
-                        color: '#4b5563',
-                        fontSize: '1.2rem',
-                        maxWidth: '700px',
-                        margin: '0 auto'
-                    }}>
+        <div className="projects-page">
+            {/* Hero Header */}
+            <header className="projects-page-header" style={{ backgroundImage: `url(${headerBg})` }}>
+                <div className="header-overlay"></div>
+                <div className="header-content">
+                    <span className="header-tag">Portafolio</span>
+                    <h1 className="header-title">Nuestros Proyectos</h1>
+                    <p className="header-desc">
                         Conoce más sobre nuestras intervenciones en mantenimiento, construcción y consultoría integral.
                     </p>
                 </div>
+            </header>
 
+            <div className="container" style={{ paddingBottom: '80px' }}>
                 <ProjectsList projects={projectsList} />
             </div>
         </div>

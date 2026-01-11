@@ -51,15 +51,15 @@ const Header = () => {
                                     Servicios <span className="arrow">▼</span>
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a href="/#gestion-inmobiliaria">Gestión Inmobiliaria</a></li>
-                                    <li><a href="/#mantenimiento">Mantenimiento de Edificios</a></li>
-                                    <li><a href="/#construccion">Construcción</a></li>
-                                    <li><a href="/#sistemas-electricos">Sistemas Eléctricos</a></li>
-                                    <li><a href="/#seguridad">Seguridad Industrial</a></li>
-                                    <li><a href="/#diseno">Diseño de Interiores</a></li>
-                                    <li><a href="/#asesoria">Asesoría Empresarial</a></li>
-                                    <li><a href="/#bi">Business Intelligence</a></li>
-                                    <li><a href="/#programador">Programador de Plataforma</a></li>
+                                    <li><a href="/services#gestion-inmobiliaria">Gestión Inmobiliaria</a></li>
+                                    <li><a href="/services#mantenimiento">Mantenimiento de Edificios</a></li>
+                                    <li><a href="/services#construccion">Construcción</a></li>
+                                    <li><a href="/services#sistemas-electricos">Sistemas Eléctricos</a></li>
+                                    <li><a href="/services#seguridad-industrial">Seguridad Industrial</a></li>
+                                    <li><a href="/services#diseno-interiores">Diseño de Interiores</a></li>
+                                    <li><a href="/services#asesoria-empresarial">Asesoría Empresarial</a></li>
+                                    <li><a href="/services#business-intelligence">Business Intelligence</a></li>
+                                    <li><a href="/services#desarrollo-plataforma">Desarrollo de Plataforma</a></li>
                                 </ul>
                             </li>
                             <li className="nav-item"><a href="/#clientes" className="nav-link">Clientes</a></li>

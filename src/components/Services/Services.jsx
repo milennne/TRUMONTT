@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Services.css';
 
 // Import images (paying attention to extensions found in assets)
@@ -68,21 +69,41 @@ const Services = () => {
                     <span className="small-title">Construye tus sueños</span>
                     <h2 className="main-title-services">Servicios de calidad</h2>
                 </div>
-                <a href="#services-all" className="view-all-link">Ver todos &rarr;</a>
+                <Link to="/services" className="view-all-link">Ver todos &rarr;</Link>
             </div>
 
             <div className="services-grid">
-                {servicesData.map((service, index) => (
-                    <div key={index} className="service-card">
-                        <div className="service-image-wrapper">
-                            <img src={service.img} alt={service.title} className="service-img" />
-                        </div>
-                        <div className="service-info">
-                            <h3 className="service-title">{service.title}</h3>
-                            <p className="service-desc">{service.desc}</p>
-                        </div>
-                    </div>
-                ))}
+                {servicesData.map((service, index) => {
+                    // Mapping current simple data to the needed slug manually or by index matches 
+                    // since the data arrays might differ slightly in structure but I need slugs.
+                    // The simplest way is to hardcode slugs here or map them.
+                    // Let's rely on the order matching the new data file roughly.
+                    // Or better, let's just make the whole card clickable to /services
+                    // But to link to specific hash, I need the slug.
+                    // I will define the slugs array matching the order.
+                    const slugs = [
+                        'gestion-inmobiliaria', 'mantenimiento', 'construccion',
+                        'sistemas-electricos', 'seguridad-industrial', 'diseno-interiores',
+                        'asesoria-empresarial', 'business-intelligence', 'desarrollo-plataforma'
+                    ];
+
+                    return (
+                        <Link
+                            to={`/services#${slugs[index]}`}
+                            key={index}
+                            className="service-card"
+                            style={{ textDecoration: 'none', color: 'inherit' }}
+                        >
+                            <div className="service-image-wrapper">
+                                <img src={service.img} alt={service.title} className="service-img" />
+                            </div>
+                            <div className="service-info">
+                                <h3 className="service-title">{service.title}</h3>
+                                <p className="service-desc">{service.desc}</p>
+                            </div>
+                        </Link>
+                    );
+                })}
             </div>
         </section>
     );

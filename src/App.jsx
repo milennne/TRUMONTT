@@ -9,6 +9,7 @@ import FeaturedProjects from './components/FeaturedProjects/FeaturedProjects'
 import ContactUs from './components/ContactUs/ContactUs'
 import Footer from './components/Footer/Footer'
 import ProjectDetail from './pages/ProjectDetail'
+import ServicesPage from './pages/Services'
 import Projects from './pages/Projects'
 import ScrollToAnchor from './components/ScrollToAnchor'
 import './App.css'
@@ -35,6 +36,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
           {/* Fallback route could go here */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import logo from '../../assets/Logocompleto.png';
+import chiru from '../../assets/chiru.png';
 
 const Footer = () => {
     return (
@@ -75,6 +76,12 @@ const Footer = () => {
 
             <div className="sub-footer">
                 <div className="container">
+                    <div className="powered-by">
+                        <span>Powered by</span>
+                        <a href="https://chiru.app/es/solutions" target="_blank" rel="noopener noreferrer">
+                            <img src={chiru} alt="Chiru - Software Solutions" className="chiru-logo" />
+                        </a>
+                    </div>
                     <p>© 2026 Trumontt Group. Todos los derechos reservados.</p>
                 </div>
             </div>

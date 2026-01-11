@@ -1,0 +1,140 @@
+.services-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 40px;
+}
+
+.service-full-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    scroll-margin-top: 120px;
+    /* Important for sticky header scrolling */
+}
+
+/* Image Styling */
+.service-full-image-wrapper {
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-full-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Required for professional look */
+    transition: transform 0.6s ease;
+}
+
+.service-full-item:hover .service-full-img {
+    transform: scale(1.02);
+}
+
+/* Content Layout (Grid/Flex) */
+.service-full-content {
+    display: flex;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+.service-description-col {
+    flex: 1.2;
+    /* Slightly wider description */
+}
+
+.service-includes-col {
+    flex: 0.8;
+    background-color: #f8fafc;
+    /* Very subtle grey bg for list */
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #111829;
+    /* Corporate Blue accent */
+}
+
+/* Typography */
+.service-full-title {
+    font-size: 2.2rem;
+    color: #111829;
+    font-weight: 800;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.service-full-desc {
+    font-size: 1.15rem;
+    color: #4b5563;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.includes-title {
+    font-size: 1.2rem;
+    color: #111829;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.includes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.includes-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.bullet-check {
+    color: #2563eb;
+    /* A brighter blue for checks so they pop */
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .service-full-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service-description-col,
+    .service-includes-col {
+        flex: 1;
+        width: 100%;
+    }
+
+    .service-includes-col {
+        border-left: none;
+        border-top: 4px solid #111829;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-full-image-wrapper {
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .service-full-title {
+        font-size: 1.8rem;
+    }
+
+    .service-full-content {
+        padding: 0;
+    }
+}

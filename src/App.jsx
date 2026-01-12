@@ -9,7 +9,8 @@ import FeaturedProjects from './components/FeaturedProjects/FeaturedProjects'
 import ContactUs from './components/ContactUs/ContactUs'
 import Footer from './components/Footer/Footer'
 import ProjectDetail from './pages/ProjectDetail'
-import ServicesPage from './pages/Services'
+import ServicesPage from './pages/Services';
+import Careers from './pages/Careers';
 import Projects from './pages/Projects'
 import ScrollToAnchor from './components/ScrollToAnchor'
 import './App.css'
@@ -37,6 +38,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/careers" element={<Careers />} /> {/* Added Careers route */}
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
           {/* Fallback route could go here */}

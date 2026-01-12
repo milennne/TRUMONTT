@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './AboutUs.css';
 import bgImage from '../../assets/quienessomos.jpg';
 
@@ -37,7 +38,7 @@ const AboutUs = () => {
                         innovación y compromiso con la excelencia, dejando una huella duradera en la historia
                         y contribuyendo al desarrollo sostenible del país.
                     </p>
-                    <a href="#equipo" className="btn btn-outline-light">Sé parte de nuestro equipo</a>
+                    <Link to="/careers" className="btn btn-outline-light">Sé parte de nuestro equipo</Link>
                 </div>
 
                 {/* Vision Card - White */}

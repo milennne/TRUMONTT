@@ -125,4 +125,30 @@
     .hero-carousel {
         height: 400px;
     }
+
+    .slide-title {
+        font-size: 1.8rem;
+        /* Significantly reduced for mobile */
+        margin-bottom: 10px;
+    }
+
+    .slide-subtitle {
+        font-size: 1rem;
+        line-height: 1.3;
+        padding: 0 10px;
+    }
+
+    .carousel-caption {
+        width: 75%;
+        /* Reduced to clear arrows (55px each side) */
+        padding: 0 10px;
+        margin: 0 auto;
+        /* Center it */
+    }
+
+    .carousel-control {
+        font-size: 1.5rem;
+        width: 35px;
+        height: 35px;
+    }
 }

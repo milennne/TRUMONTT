@@ -7,7 +7,7 @@ const Careers = () => {
             {/* 2. Why Work With Us */}
             <section className="careers-section">
                 <div className="container">
-                    <h2 className="section-title">¿Por qué trabajar con nosotros?</h2>
+                    <h2 className="careers-section-title">¿Por qué trabajar con nosotros?</h2>
                     <div className="benefits-grid">
                         <div className="benefit-card">
                             <span className="benefit-icon">🚀</span>
@@ -36,7 +36,7 @@ const Careers = () => {
             {/* 3. Profiles We Look For */}
             <section className="careers-section" style={{ backgroundColor: '#f3f4f6' }}>
                 <div className="container">
-                    <h2 className="section-title">Perfiles que buscamos</h2>
+                    <h2 className="careers-section-title">Perfiles que buscamos</h2>
                     <div className="profiles-grid">
                         <div className="profile-card"><h4>Técnicos Electricistas</h4></div>
                         <div className="profile-card"><h4>Ingenieros Civiles</h4></div>
@@ -51,7 +51,7 @@ const Careers = () => {
             {/* 4. Process */}
             <section className="careers-section">
                 <div className="container">
-                    <h2 className="section-title">Proceso de Postulación</h2>
+                    <h2 className="careers-section-title">Proceso de Postulación</h2>
                     <div className="process-steps">
                         <div className="process-step">
                             <div className="step-number">1</div>
@@ -75,7 +75,7 @@ const Careers = () => {
             {/* 5. Application Form */}
             <section className="careers-section" style={{ backgroundColor: '#f3f4f6' }}>
                 <div className="container">
-                    <h2 className="section-title">Postula Aquí</h2>
+                    <h2 className="careers-section-title">Postula Aquí</h2>
                     <div className="form-container">
                         <form onSubmit={(e) => e.preventDefault()}> {/* Prevent default submission */}
                             <div className="form-group">

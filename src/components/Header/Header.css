@@ -141,27 +141,10 @@
 
 
 
+
 /* =========================================
-   Responsive Adjustments
+   Dropdown Styling (Desktop Defaults)
    ========================================= */
-@media (max-width: 768px) {
-  .navbar-content {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-
-  .logo-image {
-    height: 40px;
-  }
-}
-
-/* Dropdown Styling */
 .dropdown {
   position: relative;
 }
@@ -214,7 +197,6 @@
   font-size: 0.9rem;
   font-weight: 500;
   text-transform: none;
-  /* Keep capitalization normal for readability */
   border-bottom: 1px solid #f0f0f0;
   transition: background-color 0.2s, color 0.2s;
 }
@@ -227,7 +209,6 @@
   background-color: var(--trumont-grey);
   color: var(--trumont-blue);
   padding-left: 25px;
-  /* Subtle hover slide effect */
 }
 
 @keyframes fadeIn {
@@ -242,14 +223,144 @@
   }
 }
 
-/* Responsive adjustment for dropdown - ensuring it fits in mobile menu */
+/* =========================================
+   Mobile Hamburger Menu Styles
+   ========================================= */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 5px;
+  z-index: 1002;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--trumont-blue);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Animation for Hamburger */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Responsive Overrides */
 @media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    /* Drawer style */
+    max-width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 80px;
+    /* Space for logo/header? Actually header is sticky/relative */
+    display: block;
+    /* Remove flex from desktop */
+  }
+
+  /* Overlay backing */
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+
+  .nav-overlay.active {
+    display: block;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+
+  .nav-link:hover::after {
+    width: 0;
+    /* Disable desktop underline effect in mobile */
+  }
+
+  /* Mobile Dropdown Styling */
   .dropdown-menu {
     position: static;
+    display: none;
+    /* Hidden by default */
     box-shadow: none;
     border-top: none;
-    background-color: #f9f9f9;
     padding-left: 20px;
-    width: 100%;
+    background-color: #f9f9f9;
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Show dropdown when active class is present (React state) */
+  .dropdown.mobile-open .dropdown-menu {
+    display: block;
+  }
+
+  /* Disable hover effect for dropdown in mobile */
+  .dropdown:hover .dropdown-menu {
+    display: none;
+    /* Revert desktop hover rule */
+  }
+
+  .dropdown.mobile-open:hover .dropdown-menu {
+    display: block;
+    /* Unless open */
+  }
+
+  .arrow {
+    float: right;
+    margin-right: 15px;
+  }
+
+  .dropdown.mobile-open .arrow {
+    transform: rotate(180deg);
   }
 }

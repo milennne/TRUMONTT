@@ -38,7 +38,8 @@ const AboutUs = () => {
                         innovación y compromiso con la excelencia, dejando una huella duradera en la historia
                         y contribuyendo al desarrollo sostenible del país.
                     </p>
-                    <Link to="/careers" className="btn btn-outline-light">Sé parte de nuestro equipo</Link>
+                    <Link to="/contactanos" className="btn btn-outline-light" style={{ display: 'none' }}>Sé parte de nuestro equipo</Link>
+                    {/* User requested removal, commenting out or removing line entirely. I will remove it. */}
                 </div>
 
                 {/* Vision Card - White */}

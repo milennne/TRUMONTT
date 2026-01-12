@@ -38,9 +38,10 @@
     padding: 60px 0;
 }
 
-.section-title {
+.careers-section-title {
     text-align: center;
-    color: #111827;
+    color: #111829;
+    /* Dark Trumontt Blue */
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 40px;
@@ -50,7 +51,7 @@
     transform: translateX(-50%);
 }
 
-.section-title::after {
+.careers-section-title::after {
     content: '';
     display: block;
     width: 60px;

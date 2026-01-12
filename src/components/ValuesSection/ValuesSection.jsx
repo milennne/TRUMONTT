@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ValuesSection.css';
 import teamImage from '../../assets/image1.jpg';
 import valuesImage from '../../assets/image2.jpg';
@@ -20,7 +21,7 @@ const ValuesSection = () => {
                             Buscamos profesionales talentosos. <br />
                             Postúlate y crece con nosotros en un entorno dinámico y colaborativo.
                         </p>
-                        <a href="#contactanos" className="btn btn-primary contact-btn">CONTÁCTANOS</a>
+                        <Link to="/careers" className="btn btn-primary contact-btn">SÉ PARTE DE NUESTRO EQUIPO</Link>
                     </div>
                 </div>
             </div>

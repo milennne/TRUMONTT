@@ -35,6 +35,7 @@ La aplicación se ha modularizado completamente en `src/components/`:
 8.  **Páginas de Detalle (Premium)**:
     *   **Servicios (`/services`)**: Página dedicada con cabecera Hero, navegación por hash (`#slug`) y lista detallada con viñetas de inclusiones.
     *   **Proyectos (`/projects`)**: Listado completo con diseño alternado y cabecera inmersiva.
+    *   **Carreras (`/careers`)**: Portal de empleo corporativo con secciones de beneficios, perfiles buscados y formulario de postulación UI.
     *   **Navegación**: Enrutamiento SPA con `react-router-dom` y scroll automático inteligente (`ScrollToAnchor`).
 9.  **Contact Us**: Sección funcional con integración de Google Maps (iframe) y formulario de contacto validado.
 10. **Footer**: Pie de página de 3 columnas (Marca, Contacto Directo, Redes Sociales) con sección "Powered by" integrada y enlaces funcionales.

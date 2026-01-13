@@ -72,58 +72,24 @@ const Careers = () => {
                 </div>
             </section>
 
-            {/* 5. Application Form */}
+            {/* 5. Google Form Link */}
             <section className="careers-section" style={{ backgroundColor: '#f3f4f6' }}>
-                <div className="container">
-                    <h2 className="careers-section-title">Postula Aquí</h2>
-                    <div className="form-container">
-                        <form onSubmit={(e) => e.preventDefault()}> {/* Prevent default submission */}
-                            <div className="form-group">
-                                <label htmlFor="fullname">Nombre Completo</label>
-                                <input type="text" id="fullname" className="form-control" placeholder="Juan Pérez" />
-                            </div>
-
-                            <div className="form-group">
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                                    <div>
-                                        <label htmlFor="email">Correo Electrónico</label>
-                                        <input type="email" id="email" className="form-control" placeholder="juan@ejemplo.com" />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="phone">Teléfono</label>
-                                        <input type="tel" id="phone" className="form-control" placeholder="+51 999 999 999" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="position">Puesto al que postula</label>
-                                <select id="position" className="form-control">
-                                    <option value="">Selecciona un puesto</option>
-                                    <option value="tecnico">Técnico Electricista</option>
-                                    <option value="ingeniero">Ingeniero Civil</option>
-                                    <option value="supervisor">Supervisor de Obra</option>
-                                    <option value="admin">Administrativo</option>
-                                    <option value="practicante">Practicante</option>
-                                    <option value="otro">Otro</option>
-                                </select>
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="message">Mensaje / Presentación</label>
-                                <textarea id="message" className="form-control" placeholder="Cuéntanos brevemente sobre ti..."></textarea>
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="cv">Adjuntar CV (PDF)</label>
-                                <input type="file" id="cv" className="form-control" accept=".pdf,.doc,.docx" />
-                            </div>
-
-                            <button type="button" className="submit-btn" onClick={() => alert('Esta es una demostración de UI. El envío no está implementado.')}>
-                                Enviar Postulación
-                            </button>
-                        </form>
-                    </div>
+                <div className="container" style={{ textAlign: 'center', padding: '40px 0' }}>
+                    <h2 className="careers-section-title" style={{ left: 'auto', transform: 'none', display: 'inline-block' }}>
+                        <a
+                            href="https://forms.gle/zqUohFjqu88e9Wu18"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: 'none', color: '#111829', borderBottom: '2px solid #0056b3', paddingBottom: '5px' }}
+                            onMouseOver={(e) => e.target.style.color = '#0056b3'}
+                            onMouseOut={(e) => e.target.style.color = '#111829'}
+                        >
+                            Postula Aquí
+                        </a>
+                    </h2>
+                    <p style={{ marginTop: '20px', fontSize: '1.1rem', color: '#555' }}>
+                        Haz clic en el enlace de arriba para completar tu postulación a través de nuestro formulario oficial.
+                    </p>
                 </div>
             </section>
         </div>

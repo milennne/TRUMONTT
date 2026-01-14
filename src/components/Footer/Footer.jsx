@@ -31,7 +31,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <span className="icon">📞</span>
-                                <a href="tel:+51941719858" style={{ color: 'inherit', textDecoration: 'none' }}>+51 941 719 858</a>
+                                <a href="tel:+51952154667" style={{ color: 'inherit', textDecoration: 'none' }}>+51 941 719 858</a>
                             </li>
                             <li>
                                 <span className="icon">✉️</span>
@@ -39,7 +39,7 @@ const Footer = () => {
                             </li>
                         </ul>
                         <a
-                            href="https://wa.me/51941719858?text=Hola,%20quisiera%20mas%20información"
+                            href="https://wa.me/51952154667?text=Hola,%20quisiera%20mas%20información"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="whatsapp-btn"

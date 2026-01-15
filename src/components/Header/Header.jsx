@@ -106,6 +106,9 @@ const Header = () => {
                             <li className="nav-item">
                                 <a href="/#proyectos" className="nav-link" onClick={closeMobileMenu}>Proyectos</a>
                             </li>
+                            <li className="nav-item">
+                                <a href="/inmobiliarias" className="nav-link" onClick={closeMobileMenu}>Inmobiliarias</a>
+                            </li>
 
                             <li className="nav-item">
                                 <a href="/#contactanos" className="nav-link" onClick={closeMobileMenu}>Contáctanos</a>

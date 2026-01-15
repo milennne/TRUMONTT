@@ -12,6 +12,7 @@ import ProjectDetail from './pages/ProjectDetail'
 import ServicesPage from './pages/Services';
 import Careers from './pages/Careers';
 import Projects from './pages/Projects'
+import Inmobiliarias from './pages/Inmobiliarias';
 import ScrollToAnchor from './components/ScrollToAnchor'
 import './App.css'
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/careers" element={<Careers />} /> {/* Added Careers route */}
           <Route path="/projects" element={<Projects />} />
+          <Route path="/inmobiliarias" element={<Inmobiliarias />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
           {/* Fallback route could go here */}
         </Routes>

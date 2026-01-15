@@ -36,7 +36,7 @@ const Header = () => {
             {/* Top Bar with Address */}
             <div className="top-bar">
                 <div className="container">
-                    <span className="address-text">Av. República de Chile 478, Jesús María</span>
+                    <span className="address-text">Av. Arequipa 2447, Of. 409, Lince, Lima</span>
                 </div>
             </div>
 

@@ -42,7 +42,7 @@ const ContactUs = () => {
                     {/* Left Column: Map */}
                     <div className="map-column">
                         <iframe
-                            src="https://maps.google.com/maps?q=Av.%20Republica%20de%20Chile%20Nro.%20478&z=15&hl=es&t=m&output=embed&iwloc=near"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.5925340656914!2d-77.03451556072998!3d-12.091724043916053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c85fd5495335%3A0xb0667f03c82d3f7!2sOf.%20409%2C%20Av.%20Arequipa%202447%2C%20Lince%2015046!5e0!3m2!1ses!2spe!4v1705298000000!5m2!1ses!2spe"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}

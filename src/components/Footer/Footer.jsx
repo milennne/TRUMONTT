@@ -27,7 +27,7 @@ const Footer = () => {
                         <ul className="contact-list">
                             <li>
                                 <span className="icon">📍</span>
-                                <span>Av. República de Chile, Nro. 478 Dpto. 603</span>
+                                <span>Av. Arequipa 2447, Of. 409, Lince, Lima</span>
                             </li>
                             <li>
                                 <span className="icon">📞</span>

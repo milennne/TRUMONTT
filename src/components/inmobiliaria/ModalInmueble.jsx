@@ -43,6 +43,11 @@ const ModalInmueble = ({ inmueble, onClose }) => {
                         <h3>Detalles:</h3>
                         <p>{inmueble.detalles}</p>
                     </div>
+                    <div style={{ marginTop: '20px', textAlign: 'center' }}>
+                        <a href="/#contactanos" className="modal-contact-btn" onClick={onClose}>
+                            Contáctanos
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

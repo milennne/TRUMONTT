@@ -108,6 +108,8 @@
 
 .nav-link {
   text-decoration: none;
+  display: flex;
+  align-items: center;
   color: var(--text-dark, #333);
   font-weight: 500;
   font-size: 1rem;
@@ -150,8 +152,6 @@
 }
 
 .dropdown-toggle {
-  display: flex;
-  align-items: center;
   gap: 5px;
 }
 

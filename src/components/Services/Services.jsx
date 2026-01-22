@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import './Services.css';
 
 // Import images (paying attention to extensions found in assets)
-import img1 from '../../assets/serviceinicio1.png';
-import img2 from '../../assets/serviceinicio2.png';
+import img1 from '../../assets/serviceinicio1.jpg';
+import img2 from '../../assets/serviceinicio2.jpeg';
 import img3 from '../../assets/serviceinicio3.jpg';
 import img4 from '../../assets/serviceinicio4.png';
 import img5 from '../../assets/serviceinicio5.jpg';

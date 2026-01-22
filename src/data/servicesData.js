@@ -1,12 +1,12 @@
-import img1 from '../assets/servicios/servicio1.jpg';
+import img1 from '../assets/servicios/servicio1.jpeg';
 import img2 from '../assets/servicios/servicio2.jpg';
 import img3 from '../assets/servicios/servicio3.jpg';
 import img4 from '../assets/servicios/servicio4.jpg';
 import img5 from '../assets/servicios/servicio5.jpg';
 import img6 from '../assets/servicios/servicio6.jpg';
-import img7 from '../assets/servicios/servicio7.jpg';
+import img7 from '../assets/servicios/servicio7.jpeg';
 import img8 from '../assets/servicios/servicio8.jpg';
-import img9 from '../assets/servicios/servicio9.jpg';
+import img9 from '../assets/servicios/servicio9.jpeg';
 
 export const servicesData = [
     {

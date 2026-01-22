@@ -122,11 +122,11 @@ const FeaturedProjects = () => {
                     </button>
                 </div>
 
-                <div className="view-more-container">
+                {/*<div className="view-more-container">
                     <a href="/projects" className="btn-link-more">
                         Ver más proyectos &rarr;
                     </a>
-                </div>
+                </div>*/}
             </div>
         </section>
     );

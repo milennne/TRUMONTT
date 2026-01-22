@@ -11,7 +11,7 @@ import img5 from '../../assets/serviceinicio5.jpg';
 import img6 from '../../assets/serviceinicio6.jpg';
 import img7 from '../../assets/serviceinicio7.jpg';
 import img8 from '../../assets/serviceinicio8.png';
-import img9 from '../../assets/serviceinicio9.png';
+import img9 from '../../assets/serviceinicio9.jpg';
 
 const servicesData = [
     {

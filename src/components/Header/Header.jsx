@@ -89,15 +89,15 @@ const Header = () => {
                                     Servicios <span className="arrow">▼</span>
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a href="/services#gestion-inmobiliaria" onClick={closeMobileMenu}>Gestión Inmobiliaria</a></li>
-                                    <li><a href="/services#mantenimiento" onClick={closeMobileMenu}>Mantenimiento de Edificios</a></li>
-                                    <li><a href="/services#construccion" onClick={closeMobileMenu}>Construcción</a></li>
-                                    <li><a href="/services#sistemas-electricos" onClick={closeMobileMenu}>Sistemas Eléctricos</a></li>
-                                    <li><a href="/services#seguridad-industrial" onClick={closeMobileMenu}>Seguridad Industrial</a></li>
-                                    <li><a href="/services#diseno-interiores" onClick={closeMobileMenu}>Diseño de Interiores</a></li>
-                                    <li><a href="/services#asesoria-empresarial" onClick={closeMobileMenu}>Asesoría Empresarial</a></li>
-                                    <li><a href="/services#business-intelligence" onClick={closeMobileMenu}>Business Intelligence</a></li>
-                                    <li><a href="/services#desarrollo-plataforma" onClick={closeMobileMenu}>Desarrollo de Plataforma</a></li>
+                                    <li><a href="/servicios/gestion-inmobiliaria" onClick={closeMobileMenu}>Gestión Inmobiliaria</a></li>
+                                    <li><a href="/servicios/mantenimiento-edificios" onClick={closeMobileMenu}>Mantenimiento de Edificios</a></li>
+                                    <li><a href="/servicios/construccion" onClick={closeMobileMenu}>Construcción</a></li>
+                                    <li><a href="/servicios/sistemas-electricos" onClick={closeMobileMenu}>Sistemas Eléctricos</a></li>
+                                    <li><a href="/servicios/seguridad-industrial" onClick={closeMobileMenu}>Seguridad Industrial</a></li>
+                                    <li><a href="/servicios/diseno-interiores" onClick={closeMobileMenu}>Diseño de Interiores</a></li>
+                                    <li><a href="/servicios/asesoria-empresarial" onClick={closeMobileMenu}>Asesoría Empresarial</a></li>
+                                    <li><a href="/servicios/business-intelligence" onClick={closeMobileMenu}>Business Intelligence</a></li>
+                                    <li><a href="/servicios/desarrollo-plataforma" onClick={closeMobileMenu}>Desarrollo de Plataforma</a></li>
                                 </ul>
                             </li>
                             <li className="nav-item">

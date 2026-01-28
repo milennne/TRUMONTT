@@ -25,7 +25,7 @@ export const servicesData = [
     {
         id: 2,
         title: 'Mantenimiento de edificios',
-        slug: 'mantenimiento',
+        slug: 'mantenimiento-edificios',
         image: img2,
         description: 'Conservamos y mejoramos el estado de instalaciones para prolongar su vida útil. Ofrecemos planes preventivos y correctivos adaptados a las necesidades específicas de cada infraestructura.',
         includes: [

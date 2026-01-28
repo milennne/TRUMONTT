@@ -9,6 +9,12 @@ import imgBusiness from '../../assets/business.png';
 
 const HeroCarousel = () => {
     const slides = [
+         {
+            src: imgGestion,
+            alt: 'Gestión Inmobiliaria',
+            title: 'Gestión Inmobiliaria',
+            subtitle: 'Garantizando el Mantenimiento y Funcionamiento Óptimo de tus Inmuebles'
+        },
         {
             src: imgConstruccion,
             alt: 'Construcción',
@@ -20,12 +26,6 @@ const HeroCarousel = () => {
             alt: 'Consultorías',
             title: 'Consultorías',
             subtitle: 'Asesoría Estratégica que Impulsa Resultados y Crecimiento Asegurado'
-        },
-        {
-            src: imgGestion,
-            alt: 'Gestión Inmobiliaria',
-            title: 'Gestión Inmobiliaria',
-            subtitle: 'Garantizando el Mantenimiento y Funcionamiento Óptimo de tus Inmuebles'
         },
         {
             src: imgBusiness,

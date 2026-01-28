@@ -89,7 +89,7 @@ const Header = () => {
                                     Servicios <span className="arrow">▼</span>
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a href="/servicios/gestion-inmobiliaria" onClick={closeMobileMenu}>Gestión Inmobiliaria</a></li>
+                                    {/*<li><a href="/servicios/gestion-inmobiliaria" onClick={closeMobileMenu}>Gestión Inmobiliaria</a></li>*/}
                                     <li><a href="/servicios/mantenimiento-edificios" onClick={closeMobileMenu}>Mantenimiento de Edificios</a></li>
                                     <li><a href="/servicios/construccion" onClick={closeMobileMenu}>Construcción</a></li>
                                     <li><a href="/servicios/sistemas-electricos" onClick={closeMobileMenu}>Sistemas Eléctricos</a></li>
@@ -101,7 +101,7 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a href="/#clientes" className="nav-link" onClick={closeMobileMenu}>Clientes</a>
+                                <a href="/servicios/gestion-inmobiliaria" className="nav-link" onClick={closeMobileMenu}>Gestión Inmobiliaria</a>
                             </li>
                             <li className="nav-item">
                                 <a href="/#proyectos" className="nav-link" onClick={closeMobileMenu}>Proyectos</a>

@@ -3,6 +3,9 @@ import './GestionInmobiliaria.css';
 
 // Importing the base asset as requested
 import heroImage from '../../assets/servicios/servicio1.jpeg';
+import im2 from '../../assets/servicios/gestioninmobiliaria.jpg';
+import im3 from '../../assets/servicios/gestion.jpg';
+
 
 const GestionInmobiliaria = () => {
 
@@ -40,7 +43,7 @@ const GestionInmobiliaria = () => {
                         </p>
                     </div>
                     <div className="gi-intro-image-wrapper">
-                        <img src={heroImage} alt="Gestión de edificios profesional" />
+                        <img src={im2} alt="Gestión de edificios profesional" />
                     </div>
                 </div>
             </section>
@@ -135,7 +138,7 @@ const GestionInmobiliaria = () => {
                 <div className="gi-tech-grid">
                     <div className="gi-tech-image">
                         {/* Reusing asset as placeholder for tech illustration */}
-                        <img src={heroImage} alt="Tecnología Inmobiliaria" className="gi-tech-img" style={{ filter: 'grayscale(20%)' }} />
+                        <img src={im3} alt="Tecnología Inmobiliaria" className="gi-tech-img" style={{ filter: 'grayscale(20%)' }} />
                     </div>
                     <div className="gi-tech-info">
                         <h2>Tecnología y Transparencia</h2>

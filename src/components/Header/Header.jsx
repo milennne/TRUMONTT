@@ -101,13 +101,13 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a href="/servicios/gestion-inmobiliaria" className="nav-link" onClick={closeMobileMenu}>Gestión Inmobiliaria</a>
-                            </li>
-                            <li className="nav-item">
                                 <a href="/#proyectos" className="nav-link" onClick={closeMobileMenu}>Proyectos</a>
                             </li>
                             <li className="nav-item">
-                                <a href="/inmobiliarias" className="nav-link" onClick={closeMobileMenu}>Inmobiliarias</a>
+                                <a href="/servicios/gestion-inmobiliaria" className="nav-link" onClick={closeMobileMenu}>Gestión Inmobiliaria</a>
+                            </li>
+                            <li className="nav-item">
+                                <a href="/inmobiliarias" className="nav-link" onClick={closeMobileMenu}>Inmuebles</a>
                             </li>
 
                             <li className="nav-item">

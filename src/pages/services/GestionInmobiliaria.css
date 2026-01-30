@@ -383,12 +383,45 @@
 }
 
 /* 9. Final CTA */
+/* 9. Final CTA */
 .gi-section-final {
-    padding: 100px 0;
+    padding: 120px 0;
     margin-top: 50px;
     text-align: center;
-    background-color: #111827;
     color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.gi-cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 24, 41, 0.85);
+    z-index: 1;
+}
+
+.gi-cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.gi-section-final h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    /* Ensure text is white */
+}
+
+.gi-section-final p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #d1d5db;
+    /* Light gray for readability */
 }
 
 .gi-section-final h2 {

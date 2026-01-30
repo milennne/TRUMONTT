@@ -221,10 +221,12 @@ const GestionInmobiliaria = () => {
             </section>
 
             {/* 9. CTA FINAL */}
-            <section className="gi-section-final">
-                <div className="container-narrow">
+            {/* 9. CTA FINAL */}
+            <section className="gi-section-final" style={{ backgroundImage: `url(${heroImage})` }}>
+                <div className="gi-cta-overlay"></div>
+                <div className="container-narrow gi-cta-content">
                     <h2>¿Qué podemos hacer por tu inmueble?</h2>
-                    <p style={{ fontSize: '1.2rem', marginBottom: '40px', color: '#ccc' }}>
+                    <p>
                         Agenda una visita técnica gratuita y descubre el potencial de tu propiedad.
                     </p>
                     <a href="/#contactanos" className="gi-btn-cta gi-btn-large">Solicitar Asesoría</a>

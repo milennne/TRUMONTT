@@ -1,0 +1,508 @@
+/* SistemasElectricos.css - Dedicated styles for Electrical Systems Service Page */
+
+/* General Layout */
+.electrico-page {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.electrico-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 1. Hero Section */
+.electrico-hero {
+    position: relative;
+    height: 90vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.electrico-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Gradient slightly darker/more technical feel */
+    background: linear-gradient(135deg, rgba(3, 7, 18, 0.9) 0%, rgba(17, 24, 39, 0.6) 100%);
+}
+
+.electrico-hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    padding-left: 5%;
+}
+
+.electrico-hero-subtitle {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #60a5fa;
+    /* Corporate Light Blue */
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.electrico-hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.electrico-btn-cta {
+    display: inline-block;
+    background-color: #0056b3;
+    /* Corporate Blue */
+    color: #fff;
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.electrico-btn-cta:hover {
+    background-color: #003d82;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 2. Intro Section "What we do" */
+/* 2. Intro Section "What we do" */
+.electrico-section-intro {
+    padding: 100px 0;
+    background: #fff;
+    position: relative;
+}
+
+.electrico-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.electrico-intro-text h2 {
+    font-size: 2.8rem;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.electrico-intro-text p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+.electrico-intro-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.electrico-intro-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.electrico-intro-image:hover img {
+    transform: scale(1.03);
+}
+
+.electrico-image-badge {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    color: #111827;
+    border-left: 5px solid #60a5fa;
+}
+
+/* Specific Responsive for Intro */
+@media (max-width: 900px) {
+    .electrico-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .electrico-intro-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .electrico-image-badge {
+        display: none;
+    }
+}
+
+/* 3. Workflow Section */
+.electrico-section-workflow {
+    padding: 120px 0;
+    background-color: #f8fafc;
+    /* Very light slate */
+}
+
+.electrico-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #111827;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.electrico-workflow-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.electrico-step-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-top: 4px solid #0056b3;
+    /* Blue accent */
+    transition: transform 0.3s ease;
+}
+
+.electrico-step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.electrico-step-num {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    background: #111827;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.electrico-step-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: #111827;
+}
+
+.electrico-step-card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* 4. Types of Systems */
+.electrico-section-types {
+    padding: 120px 0;
+    background-color: #111827;
+    /* Dark Tech Blue */
+    color: #fff;
+}
+
+.electrico-section-types .electrico-section-title {
+    color: #fff;
+}
+
+.electrico-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.electrico-type-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.electrico-type-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #60a5fa;
+    transform: translateY(-8px);
+}
+
+.electrico-type-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #60a5fa;
+    /* Light Blue */
+}
+
+.electrico-type-box h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.electrico-type-box p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* 5. Included Services */
+.electrico-section-services {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.electrico-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.electrico-service-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.electrico-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: #60a5fa;
+}
+
+.service-icon-box {
+    background: #eff6ff;
+    color: #0056b3;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.electrico-service-card h3 {
+    font-size: 1.25rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.electrico-service-card p {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* 6. Security and Regulations */
+.electrico-section-security {
+    padding: 120px 0;
+    background: linear-gradient(to right, #0f172a 0%, #1e293b 100%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.electrico-security-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.electrico-security-text {
+    flex: 1;
+    min-width: 320px;
+}
+
+.electrico-security-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.electrico-security-text p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+}
+
+.electrico-cert-badges {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.electrico-badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #60a5fa;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+.electrico-security-visual {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Placeholder visual if no image */
+    height: 300px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+/* 7. Benefits */
+.electrico-section-benefits {
+    padding: 120px 0;
+    background-color: #fff;
+}
+
+.electrico-benefits-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.electrico-benefit-card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    text-align: center;
+    padding: 20px;
+}
+
+.electrico-benefit-icon {
+    width: 70px;
+    height: 70px;
+    background: #eff6ff;
+    /* Very Light Blue */
+    color: #0056b3;
+    /* Corporate Blue */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 20px;
+    transition: transform 0.3s;
+}
+
+.electrico-benefit-card:hover .electrico-benefit-icon {
+    transform: rotateY(180deg);
+}
+
+.electrico-benefit-card h4 {
+    font-size: 1.2rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+/* 8. Final CTA */
+.electrico-section-cta {
+    padding: 120px 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+
+.electrico-cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 24, 41, 0.9);
+    /* Dark overlay */
+    z-index: 1;
+}
+
+.electrico-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.electrico-cta-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.electrico-cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #d1d5db;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .electrico-hero-title {
+        font-size: 2.8rem;
+    }
+
+    .electrico-security-content {
+        flex-direction: column;
+    }
+
+    .electrico-security-visual {
+        width: 100%;
+    }
+
+    .electrico-cta-content h2 {
+        font-size: 2.2rem;
+    }
+}

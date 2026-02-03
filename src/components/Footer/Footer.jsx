@@ -93,6 +93,13 @@ const Footer = () => {
                         </a>
                     </div>
                     <p>© 2026 Trumontt Group. Todos los derechos reservados.</p>
+                    {/* Hidden SEO Text for Brand Variations */}
+                    <div className="sr-only">
+                        <p>
+                            Trumontt Group también es conocido como Trumont o Trumunt. Lideramos el sector de construcción y gestión inmobiliaria en Perú.
+                            Contáctenos para proyectos integrales bajo el respaldo de Trumont.
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>

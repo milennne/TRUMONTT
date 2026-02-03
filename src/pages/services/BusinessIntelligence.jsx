@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './BusinessIntelligence.css';
 import heroImage from '../../assets/servicios/servicio8.jpg';
+import im1 from '../../assets/servicios/bussines.jpg';
 
 const BusinessIntelligence = () => {
     useEffect(() => {
@@ -34,7 +35,7 @@ const BusinessIntelligence = () => {
                             </p>
                         </div>
                         <div className="bi-intro-image">
-                            <img src={heroImage} alt="Análisis de Datos Corporativos" />
+                            <img src={im1} alt="Análisis de Datos Corporativos" />
                         </div>
                     </div>
                 </div>

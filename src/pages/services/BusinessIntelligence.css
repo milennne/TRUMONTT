@@ -256,6 +256,16 @@
 .bi-type-icon {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-type-icon svg {
+    width: 48px;
+    height: 48px;
+    color: #1e3a8a;
+    /* Dark Blue */
 }
 
 .bi-type-card h3 {
@@ -298,7 +308,17 @@
 }
 
 .bi-benefit-icon {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-benefit-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+    /* White Icon */
 }
 
 .bi-benefit-item:hover {

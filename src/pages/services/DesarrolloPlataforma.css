@@ -164,6 +164,16 @@
 .dp-card-icon {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dp-card-icon svg {
+    width: 48px;
+    height: 48px;
+    color: #1e3a8a;
+    /* Dark Blue */
 }
 
 .dp-card h3 {
@@ -341,7 +351,16 @@
 .dp-benefit-icon {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dp-benefit-icon svg {
+    width: 48px;
+    height: 48px;
+    color: #ffffff;
+    /* White Icon */
 }
 
 .dp-benefit-item h3 {

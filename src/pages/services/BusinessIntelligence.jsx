@@ -109,22 +109,42 @@ const BusinessIntelligence = () => {
                     <h2 className="bi-section-title">Tipos de Análisis</h2>
                     <div className="bi-types-grid">
                         <div className="bi-type-card">
-                            <div className="bi-type-icon">📊</div>
+                            <div className="bi-type-icon">
+                                {/* Descriptivo - Bar Chart */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" />
+                                </svg>
+                            </div>
                             <h3>Descriptivo</h3>
                             <p>¿Qué sucedió? Análisis histórico para entender el rendimiento pasado.</p>
                         </div>
                         <div className="bi-type-card">
-                            <div className="bi-type-icon">🔍</div>
+                            <div className="bi-type-icon">
+                                {/* Diagnóstico - Magnifying Glass */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                            </div>
                             <h3>Diagnóstico</h3>
                             <p>¿Por qué sucedió? Profundización en las causas raíz de los resultados.</p>
                         </div>
                         <div className="bi-type-card">
-                            <div className="bi-type-icon">📈</div>
+                            <div className="bi-type-icon">
+                                {/* Predictivo - Line Chart */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
+                                </svg>
+                            </div>
                             <h3>Predictivo</h3>
                             <p>¿Qué sucederá? Proyecciones basadas en tendencias y patrones.</p>
                         </div>
                         <div className="bi-type-card">
-                            <div className="bi-type-icon">💡</div>
+                            <div className="bi-type-icon">
+                                {/* Prescriptivo - Lightbulb */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                                </svg>
+                            </div>
                             <h3>Prescriptivo</h3>
                             <p>¿Qué debemos hacer? Recomendaciones para optimizar el futuro.</p>
                         </div>
@@ -138,22 +158,59 @@ const BusinessIntelligence = () => {
                     <h2 className="bi-section-title light" style={{ marginBottom: '20px' }}>Beneficios para su Empresa</h2>
                     <div className="bi-benefits-grid">
                         <div className="bi-benefit-item">
-                            <span className="bi-benefit-icon">✅</span> Decisiones basadas en datos
+                            <span className="bi-benefit-icon">
+                                {/* Decisiones basadas en datos - Check Badge */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                                </svg>
+                            </span>
+                            Decisiones basadas en datos
                         </div>
                         <div className="bi-benefit-item">
-                            <span className="bi-benefit-icon">🎛️</span> Mayor control del negocio
+                            <span className="bi-benefit-icon">
+                                {/* Mayor control del negocio - Sliders */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                                </svg>
+                            </span>
+                            Mayor control del negocio
                         </div>
                         <div className="bi-benefit-item">
-                            <span className="bi-benefit-icon">⏱️</span> Ahorro de tiempo en reportes
+                            <span className="bi-benefit-icon">
+                                {/* Ahorro de tiempo en reportes - Clock */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </span>
+                            Ahorro de tiempo en reportes
                         </div>
                         <div className="bi-benefit-item">
-                            <span className="bi-benefit-icon">👁️</span> Visibilidad en tiempo real
+                            <span className="bi-benefit-icon">
+                                {/* Visibilidad en tiempo real - Eye */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </span>
+                            Visibilidad en tiempo real
                         </div>
                         <div className="bi-benefit-item">
-                            <span className="bi-benefit-icon">🚀</span> Mejora del rendimiento operativo
+                            <span className="bi-benefit-icon">
+                                {/* Mejora del rendimiento operativo - Rocket */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                                </svg>
+                            </span>
+                            Mejora del rendimiento operativo
                         </div>
                         <div className="bi-benefit-item">
-                            <span className="bi-benefit-icon">📂</span> Información centralizada
+                            <span className="bi-benefit-icon">
+                                {/* Información centralizada - Folder */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                </svg>
+                            </span>
+                            Información centralizada
                         </div>
                     </div>
                 </div>

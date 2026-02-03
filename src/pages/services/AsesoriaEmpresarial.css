@@ -1,0 +1,380 @@
+/* AsesoriaEmpresarial.css - Dedicated styles for Business Consulting Page */
+
+/* General Layout */
+.asesoria-page {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.ae-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ae-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #111827;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.ae-section-title.light {
+    color: #fff;
+}
+
+/* 1. HERO */
+.ae-hero {
+    position: relative;
+    height: 90vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center horizontally */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.ae-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 100%);
+}
+
+.ae-hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align text/items to left */
+    text-align: left;
+    /* Ensure text creates left alignment context */
+    margin: 0 auto;
+    /* Center the block itself */
+    width: fit-content;
+    /* Shrink to fit content so it centers properly */
+}
+
+.ae-hero-subtitle {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #60a5fa;
+    /* Light Blue */
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ae-hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.ae-btn-cta {
+    display: inline-block;
+    background-color: #0056b3;
+    /* Corporate Blue */
+    color: #fff;
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.ae-btn-cta:hover {
+    background-color: #003d82;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.3);
+}
+
+/* 2. INTRO SECTION */
+.ae-section-intro {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.ae-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.ae-intro-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+.ae-intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.ae-intro-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. AREAS DE ASESORIA */
+.ae-section-areas {
+    padding: 100px 0;
+    background: #f3f4f6;
+}
+
+.ae-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.ae-area-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    border-top: 4px solid #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+    /* Center align for icon */
+}
+
+.ae-area-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ae-area-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.ae-area-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.ae-area-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* 4. METHODOLOGY */
+.ae-section-methodology {
+    padding: 100px 0;
+    background: #111827;
+    /* Dark */
+    color: #fff;
+}
+
+.ae-methodology-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ae-step-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    /* Centering text */
+    transition: background 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centering flex items */
+}
+
+.ae-step-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.ae-step-number {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #0056b3;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    border: none;
+}
+
+.ae-step-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.ae-step-item p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .ae-methodology-steps {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* 5. SERVICES LIST */
+.ae-section-services {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.ae-services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ae-service-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: #f9fafb;
+    border-radius: 6px;
+    border-left: 3px solid #0056b3;
+}
+
+.ae-check-icon {
+    width: 24px;
+    height: 24px;
+    background: #dbeafe;
+    color: #0056b3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.ae-service-text {
+    font-size: 1.1rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* 6. BENEFITS */
+.ae-section-benefits {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+    color: #fff;
+}
+
+.ae-benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ae-benefit-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.ae-benefit-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.ae-benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.ae-benefit-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+
+
+/* 8. FINAL CTA */
+.ae-section-cta {
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.ae-cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.ae-cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.ae-cta-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ae-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .ae-intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ae-section-cta {
+        background-attachment: scroll;
+    }
+}

@@ -1,0 +1,390 @@
+/* DisenoInteriores.css */
+
+/* General Layout */
+.interior-page {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.interior-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 1. Hero Section */
+.interior-hero {
+    position: relative;
+    height: 90vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.interior-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(17, 24, 41, 0.9) 0%, rgba(17, 24, 41, 0.6) 100%);
+    /* Matched reference gradient */
+    z-index: 1;
+}
+
+.interior-hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.interior-hero-subtitle {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #60a5fa;
+    /* Corporate Light Blue */
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-style: normal;
+    /* Removed italic */
+}
+
+.interior-hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    text-shadow: none;
+    /* Removed shadow specific to previous design if reference doesn't have it or has it differently */
+}
+
+.interior-btn-cta {
+    display: inline-block;
+    background-color: #0056b3;
+    /* Corporate Blue */
+    color: #fff;
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.interior-btn-cta:hover {
+    background-color: #003d82;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 2. Nuestra Filosofía (Intro) */
+.interior-philosophy {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.interior-philosophy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.interior-philosophy-text h2 {
+    font-size: 2.8rem;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.interior-philosophy-text p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+.interior-philosophy-image {
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    background-image: url('../../assets/servicios/diseño.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 3. Qué diseñamos (Services Grid) */
+.interior-designs-section {
+    padding: 120px 0;
+    background-color: #f8fafc;
+}
+
+.interior-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #111827;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.interior-designs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.interior-design-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.interior-design-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: #60a5fa;
+}
+
+.interior-design-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #111827;
+    font-weight: 700;
+}
+
+.interior-design-card p {
+    color: #64748b;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* 4. Proceso Creativo (Steps) */
+.interior-process-section {
+    padding: 120px 0;
+    background: #fff;
+}
+
+.interior-timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.interior-process-step {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.interior-step-dot {
+    width: 50px;
+    height: 50px;
+    background: #111827;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.interior-process-step h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #111827;
+    font-weight: 700;
+}
+
+.interior-process-step p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* 5. Servicios Incluidos */
+.interior-services-section {
+    padding: 100px 0;
+    background-color: #111827;
+    /* Dark Tech Blue */
+    color: #fff;
+}
+
+.interior-services-section .interior-section-title {
+    color: #fff;
+}
+
+.interior-services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.interior-service-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.interior-service-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #60a5fa;
+    transform: translateY(-5px);
+}
+
+.interior-service-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto 20px;
+    color: #fff;
+    /* White icons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interior-service-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke-width: 1.5;
+}
+
+.interior-service-item h4 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* 6. Beneficios */
+.interior-benefits-section {
+    padding: 120px 0;
+    background: #fff;
+}
+
+.interior-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.interior-benefit-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    /* Standard border */
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.interior-benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: #60a5fa;
+}
+
+.interior-benefit-card h4 {
+    font-size: 1.2rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.interior-benefit-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+
+
+
+/* 8. CTA Final */
+.interior-cta-section {
+    padding: 120px 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.interior-cta-overlay {
+    /* Separate overlay class if needed, but handled by hero-overlay style above for now, or just use hero overlay approach */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 24, 41, 0.9);
+    z-index: 1;
+}
+
+.interior-cta-container {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.interior-cta-container h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .interior-hero-title {
+        font-size: 2.8rem;
+    }
+
+    .interior-philosophy-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .interior-image-col {
+        height: 300px;
+    }
+
+    .interior-timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interior-process-step {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .interior-cta-container h2 {
+        font-size: 2.2rem;
+    }
+}

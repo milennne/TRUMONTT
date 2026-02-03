@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './SistemasElectricos.css';
 import heroImage from '../../assets/servicios/servicio4.jpg';
+import im1 from '../../assets/servicios/electricidad.jpg';
+
 
 const SistemasElectricos = () => {
 
@@ -36,7 +38,7 @@ const SistemasElectricos = () => {
                             </p>
                         </div>
                         <div className="electrico-intro-image">
-                            <img src={heroImage} alt="Ingeniería Eléctrica Trumontt" />
+                            <img src={im1} alt="Ingeniería Eléctrica Trumontt" />
                         </div>
                     </div>
                 </div>
@@ -77,22 +79,38 @@ const SistemasElectricos = () => {
                     <h2 className="electrico-section-title">Especializaciones</h2>
                     <div className="electrico-types-grid">
                         <div className="electrico-type-box">
-                            <div className="electrico-type-icon">🏠</div>
+                            <div className="electrico-type-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+                                </svg>
+                            </div>
                             <h3>Residencial</h3>
                             <p>Cableado seguro y eficiente para edificios multifamiliares y condominios.</p>
                         </div>
                         <div className="electrico-type-box">
-                            <div className="electrico-type-icon">🏢</div>
+                            <div className="electrico-type-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                                </svg>
+                            </div>
                             <h3>Comercial</h3>
                             <p>Sistemas de alta demanda para oficinas, locales y centros comerciales.</p>
                         </div>
                         <div className="electrico-type-box">
-                            <div className="electrico-type-icon">🏭</div>
+                            <div className="electrico-type-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                                </svg>
+                            </div>
                             <h3>Industrial</h3>
                             <p>Potencia y control para plantas, almacenes y maquinaria pesada.</p>
                         </div>
                         <div className="electrico-type-box">
-                            <div className="electrico-type-icon">🔋</div>
+                            <div className="electrico-type-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M4.5 10.5H18V15H4.5v-4.5ZM3.75 18h15A2.25 2.25 0 0 0 21 15.75v-6a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 1.5 9.75v6A2.25 2.25 0 0 0 3.75 18Z" />
+                                </svg>
+                            </div>
                             <h3>Sistemas de Emergencia</h3>
                             <p>Grupos electrógenos, UPS y luces de emergencia certificadas.</p>
                         </div>
@@ -168,7 +186,9 @@ const SistemasElectricos = () => {
                         </div>
                     </div>
                     <div className="electrico-security-visual">
-                        <span style={{ fontSize: '8rem' }}>🛡️</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z" />
+                        </svg>
                     </div>
                 </div>
             </section>
@@ -179,22 +199,38 @@ const SistemasElectricos = () => {
                     <h2 className="electrico-section-title">Beneficios de nuestro servicio</h2>
                     <div className="electrico-benefits-grid">
                         <div className="electrico-benefit-card">
-                            <div className="electrico-benefit-icon">⚡</div>
+                            <div className="electrico-benefit-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                                </svg>
+                            </div>
                             <h4>Seguridad Garantizada</h4>
                             <p>Reducción drástica de riesgos de corto circuito e incendios.</p>
                         </div>
                         <div className="electrico-benefit-card">
-                            <div className="electrico-benefit-icon">📉</div>
+                            <div className="electrico-benefit-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6 9 12.75l4.286-4.286a11.948 11.948 0 0 1 4.306 6.43l.776 2.898m0 0 3.182-5.511m-3.182 5.51-5.511-3.181" />
+                                </svg>
+                            </div>
                             <h4>Ahorro Energético</h4>
                             <p>Optimización de consumo mediante balance de cargas y tecnología LED.</p>
                         </div>
                         <div className="electrico-benefit-card">
-                            <div className="electrico-benefit-icon">🔄</div>
+                            <div className="electrico-benefit-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                                </svg>
+                            </div>
                             <h4>Continuidad Operativa</h4>
                             <p>Sistemas confiables que evitan paradas no programadas.</p>
                         </div>
                         <div className="electrico-benefit-card">
-                            <div className="electrico-benefit-icon">👷</div>
+                            <div className="electrico-benefit-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                                </svg>
+                            </div>
                             <h4>Soporte Especializado</h4>
                             <p>Ingenieros y técnicos calificados a su disposición.</p>
                         </div>

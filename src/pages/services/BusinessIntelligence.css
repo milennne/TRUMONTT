@@ -55,13 +55,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* Align text items to left */
     text-align: left;
-    /* Ensure text context is left */
     margin: 0 auto;
-    /* Center the block itself */
     width: fit-content;
-    /* Shrink block to fit content */
 }
 
 .bi-hero-subtitle {
@@ -69,7 +65,6 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: #60a5fa;
-    /* Light Blue */
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -79,13 +74,20 @@
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.2;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.bi-hero-desc {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: #e2e8f0;
+    max-width: 700px;
 }
 
 .bi-btn-cta {
     display: inline-block;
     background-color: #0056b3;
-    /* Corporate Blue */
     color: #fff;
     padding: 16px 32px;
     font-size: 1.1rem;
@@ -133,10 +135,50 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* 3. METHODOLOGY */
-.bi-section-methodology {
+/* 3. NEW SECTION: PROFILES (PARA QUIÉN ES BI) */
+.bi-section-profiles {
     padding: 100px 0;
     background: #f8fafc;
+}
+
+.bi-profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.bi-profile-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #0056b3;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.bi-profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.bi-profile-card h3 {
+    font-size: 1.4rem;
+    color: #1e3a8a;
+    /* Dark Blue */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.bi-profile-card p {
+    color: #4b5563;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* 4. METHODOLOGY */
+.bi-section-methodology {
+    padding: 100px 0;
+    background: #fff;
 }
 
 .bi-methodology-steps {
@@ -149,41 +191,122 @@
     background: #fff;
     padding: 30px;
     border-radius: 8px;
-    border-top: 4px solid #0056b3;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s;
 }
 
 .bi-step-card:hover {
     transform: translateY(-5px);
+    border-color: #0056b3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .bi-step-number {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #e2e8f0;
-    margin-bottom: 15px;
-    line-height: 1;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #f1f5f9;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 0;
 }
 
 .bi-step-card h3 {
+    position: relative;
+    z-index: 1;
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #1f2937;
-    font-weight: 600;
+    font-weight: 700;
+    padding-right: 50px;
 }
 
 .bi-step-card p {
+    position: relative;
+    z-index: 1;
     color: #64748b;
     line-height: 1.5;
 }
 
-/* 4. SERVICES LIST */
+/* 5. NEW SECTION: CASES (CASOS DE USO) */
+.bi-section-cases {
+    padding: 100px 0;
+    background: #1e293b;
+    /* Dark Slate */
+    color: #fff;
+}
+
+.bi-section-cases .bi-section-title {
+    color: #fff;
+}
+
+.bi-cases-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.bi-case-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.3s;
+}
+
+.bi-case-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.bi-case-item h4 {
+    color: #60a5fa;
+    /* Light Blue */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.bi-case-item p {
+    color: #cbd5e1;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/* 6. SERVICES LIST */
 .bi-section-services {
     padding: 100px 0;
-    background: #111827;
-    /* Dark */
+    background: #fff;
+}
+
+.bi-section-services .bi-section-title {
+    text-align: center;
+    color: #111827;
+}
+
+/* Override previous dark theme for services if we want to change it, 
+   but based on the new JSX structure, section titles might need care.
+   In current JSX: <h2 className="bi-section-title light">. 
+   Wait, in JSX it's `light` class.
+   Let's check the JSX again. 
+   Ah, in JSX 'Alcance del Servicio' has `light` class? Let me check line 125 of JSX.
+   Line 125: <h2 className="bi-section-title light">Alcance del Servicio</h2>
+   AND section background was dark in previous CSS.
+   The user wants "London Consulting" style which is usually clean/white.
+   Let's make Services section white with dark text, OR keep it dark if it looks good.
+   I'll stick to a dark section for contrast, so I KEEP .bi-section-services dark background.
+*/
+
+.bi-section-services {
+    background: #0f172a;
+    /* Very Dark Blue */
     color: #fff;
+}
+
+.bi-section-services .bi-section-title {
+    color: #fff;
+    /* Ensure title is white */
 }
 
 .bi-services-list {
@@ -198,14 +321,14 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     transition: background 0.3s;
 }
 
 .bi-service-item:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .bi-check-icon {
@@ -227,58 +350,7 @@
     color: #f3f4f6;
 }
 
-/* 5. ANALYSIS TYPES */
-.bi-section-types {
-    padding: 100px 0;
-    background: #fff;
-}
-
-.bi-types-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.bi-type-card {
-    text-align: center;
-    padding: 40px 20px;
-    background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
-
-.bi-type-card:hover {
-    border-color: #0056b3;
-    box-shadow: 0 10px 30px rgba(0, 86, 179, 0.1);
-}
-
-.bi-type-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bi-type-icon svg {
-    width: 48px;
-    height: 48px;
-    color: #1e3a8a;
-    /* Dark Blue */
-}
-
-.bi-type-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    color: #111827;
-}
-
-.bi-type-card p {
-    color: #6b7280;
-}
-
-/* 6. BENEFITS */
+/* 7. BENEFITS */
 .bi-section-benefits {
     padding: 100px 0;
     background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
@@ -304,7 +376,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    /* Space between icon and text */
 }
 
 .bi-benefit-icon {
@@ -318,7 +389,6 @@
     width: 24px;
     height: 24px;
     color: #ffffff;
-    /* White Icon */
 }
 
 .bi-benefit-item:hover {
@@ -326,7 +396,7 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* 7. TECH & TOOLS */
+/* 8. TECH & TOOLS */
 .bi-section-tech {
     padding: 100px 0;
     background: #f8fafc;
@@ -341,24 +411,27 @@
 .bi-tech-list {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     margin-top: 40px;
     flex-wrap: wrap;
 }
 
 .bi-tech-item {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 600;
     color: #475569;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background: #fff;
-    border-radius: 8px;
+    border-radius: 50px;
+    /* Pill shape */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
 }
 
-/* 8. FINAL CTA */
+/* 9. FINAL CTA */
 .bi-section-cta {
-    padding: 100px 0;
+    padding: 120px 0;
+    /* Taller CTA */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -373,17 +446,22 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(15, 23, 42, 0.85);
+    /* Darker overlay */
 }
 
 .bi-cta-content {
     position: relative;
     z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .bi-cta-content h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+    font-weight: 800;
 }
 
 /* Responsive */
@@ -392,11 +470,23 @@
         font-size: 2.5rem;
     }
 
+    .bi-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .bi-hero-desc {
+        font-size: 1.1rem;
+    }
+
     .bi-intro-grid {
         grid-template-columns: 1fr;
     }
 
     .bi-services-list {
         grid-template-columns: 1fr;
+    }
+
+    .bi-case-item {
+        text-align: left;
     }
 }

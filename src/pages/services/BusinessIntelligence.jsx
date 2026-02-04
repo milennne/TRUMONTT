@@ -6,7 +6,7 @@ import im1 from '../../assets/servicios/bussines.jpg';
 const BusinessIntelligence = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        document.title = 'Trumontt Group | Business Intelligence';
+        document.title = 'Trumontt Group | Business Intelligence Estratégico';
     }, []);
 
     return (
@@ -15,231 +15,244 @@ const BusinessIntelligence = () => {
             <header className="bi-hero" style={{ backgroundImage: `url(${heroImage})` }}>
                 <div className="bi-hero-overlay"></div>
                 <div className="bi-hero-content">
-                    <span className="bi-hero-subtitle">Inteligencia de Negocios</span>
+                    <span className="bi-hero-subtitle">Dirección • Control • Estrategia</span>
                     <h1 className="bi-hero-title">Business Intelligence</h1>
-                    <a href="/#contactanos" className="bi-btn-cta">SOLICITAR DIAGNÓSTICO DE DATOS</a>
+                    <p className="bi-hero-desc">
+                        Convertimos datos dispersos en decisiones estratégicas para la alta dirección.
+                        Deje de operar a ciegas y recupere el control total de su rentabilidad.
+                    </p>
+                    <a href="/#contactanos" className="bi-btn-cta">SOLICITAR DIAGNÓSTICO EJECUTIVO</a>
                 </div>
             </header>
 
-            {/* 2. ¿QUÉ ES BI? */}
+            {/* 2. ¿QUÉ ES BI? (ENFOQUE CONSULTIVO) */}
             <section className="bi-section-intro">
                 <div className="bi-container">
                     <div className="bi-intro-grid">
                         <div className="bi-intro-text">
-                            <h2>Decisiones Inteligentes Basadas en Datos</h2>
+                            <h2>Más que tecnología, es Madurez Empresarial</h2>
                             <p>
-                                En el entorno competitivo actual, la intuición ya no es suficiente. El Business Intelligence (BI) transforma los datos brutos de su empresa en información procesable y significativa.
+                                En un entorno volátil, la intuición no basta. El verdadero Business Intelligence no se trata de tener "gráficos bonitos", sino de construir una <strong>Estructura de Gobierno de Datos</strong> que elimine la incertidumbre.
                             </p>
                             <p>
-                                Ayudamos a su organización a recopilar, analizar y visualizar métricas clave (KPIs) para identificar tendencias, optimizar operaciones y anticipar oportunidades de mercado con total precisión.
+                                Implementamos soluciones de analítica avanzada que permiten a la Gerencia General y Directorios visualizar el estado real de la compañía en tiempo real, asegurando que cada decisión operativa esté alineada con los objetivos financieros macro.
+                            </p>
+                            <p>
+                                <strong>El resultado:</strong> Una organización que se anticipa al mercado en lugar de reaccionar a él.
                             </p>
                         </div>
                         <div className="bi-intro-image">
-                            <img src={im1} alt="Análisis de Datos Corporativos" />
+                            <img src={im1} alt="Toma de decisiones corporativas basada en datos" />
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* 3. CÓMO TRABAJAMOS (METODOLOGÍA) */}
+            {/* 3. NUEVA SECCIÓN: ¿PARA QUIÉN ES BI? */}
+            <section className="bi-section-profiles">
+                <div className="bi-container">
+                    <h2 className="bi-section-title">Impacto por Nivel Directivo</h2>
+                    <div className="bi-profiles-grid">
+                        <div className="bi-profile-card">
+                            <h3>Gerencia General</h3>
+                            <p>Visión 360° del negocio. Elimine las "cajas negras" operativas y supervise la rentabilidad real de cada unidad de negocio en tiempo real.</p>
+                        </div>
+                        <div className="bi-profile-card">
+                            <h3>Finanzas</h3>
+                            <p>Automatización de estados financieros y control presupuestal. Pase de ser un "generador de reportes" a un analista estratégico de rentabilidad.</p>
+                        </div>
+                        <div className="bi-profile-card">
+                            <h3>Comercial</h3>
+                            <p>Seguimiento granular del pipeline de ventas, desempeño de ejecutivos y proyección de cierre (forecast) con precisión matemática.</p>
+                        </div>
+                        <div className="bi-profile-card">
+                            <h3>Operaciones</h3>
+                            <p>Detección de cuellos de botella y tiempos muertos. Optimice la cadena de valor basándose en métricas de eficiencia probadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 4. METODOLOGÍA CONSULTIVA (REFINADA) */}
             <section className="bi-section-methodology">
                 <div className="bi-container">
-                    <h2 className="bi-section-title">Nuestro Proceso de Trabajo</h2>
+                    <h2 className="bi-section-title">Nuestra Metodología de Intervención</h2>
                     <div className="bi-methodology-steps">
                         <div className="bi-step-card">
                             <div className="bi-step-number">01</div>
-                            <h3>Evaluación de Fuentes</h3>
-                            <p>Identificamos y conectamos todas las fuentes de datos (ERPs, CRMs, Excel) de su empresa.</p>
+                            <h3>Entendimiento del Negocio</h3>
+                            <p>No hablamos de datos hasta no entender su modelo de rentabilidad y sus objetivos estratégicos anuales.</p>
                         </div>
                         <div className="bi-step-card">
                             <div className="bi-step-number">02</div>
-                            <h3>Diseño del Modelo</h3>
-                            <p>Estructuramos y limpiamos la información para garantizar análisis confiables y rápidos.</p>
+                            <h3>Gobierno de Datos</h3>
+                            <p>Establecemos las reglas del juego. Unificamos criterios para que "Venta Neta" signifique lo mismo en todas las áreas.</p>
                         </div>
                         <div className="bi-step-card">
                             <div className="bi-step-number">03</div>
-                            <h3>Desarrollo de Dashboards</h3>
-                            <p>Creamos tableros visuales e interactivos adaptados a las necesidades de cada área.</p>
+                            <h3>Implementación Ágil</h3>
+                            <p>Desarrollamos tableros de control ejecutivos enfocados en responder preguntas de negocio, no en acumular métricas.</p>
                         </div>
                         <div className="bi-step-card">
                             <div className="bi-step-number">04</div>
-                            <h3>Automatización</h3>
-                            <p>Configuramos actualizaciones automáticas para que siempre tenga datos en tiempo real.</p>
+                            <h3>Adopción y Cultura</h3>
+                            <p>Acompañamos a su equipo directivo para asegurar que las decisiones importantes pasen por la plataforma.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* 4. SERVICIOS INCLUIDOS */}
+            {/* 5. NUEVA SECCIÓN: CASOS DE USO COMUNES */}
+            <section className="bi-section-cases">
+                <div className="bi-container">
+                    <h2 className="bi-section-title">Decisiones que ahora podrá tomar</h2>
+                    <div className="bi-cases-list">
+                        <div className="bi-case-item">
+                            <h4>Control de Margen Bruto</h4>
+                            <p>Identifique qué productos o servicios están erosionando su rentabilidad promedio y ajuste precios o costos de inmediato.</p>
+                        </div>
+                        <div className="bi-case-item">
+                            <h4>Gestión de Flujo de Caja</h4>
+                            <p>Proyecte con exactitud sus necesidades de liquidez cruzando cuentas por cobrar, pagar y proyecciones de venta.</p>
+                        </div>
+                        <div className="bi-case-item">
+                            <h4>Eficiencia de Inventarios</h4>
+                            <p>Detecte sobre-stock inmovilizado y optimice las compras para liberar capital de trabajo.</p>
+                        </div>
+                        <div className="bi-case-item">
+                            <h4>Retención de Clientes</h4>
+                            <p>Analice patrones de compra y detecte clientes en riesgo de fuga antes de que dejen de comprar.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 6. SERVICIOS INCLUIDOS (OPTIMIZADO) */}
             <section className="bi-section-services">
                 <div className="bi-container">
-                    <h2 className="bi-section-title light">Servicios Incluidos</h2>
+                    <h2 className="bi-section-title light">Alcance de la Consultoría</h2>
                     <div className="bi-services-list">
                         <div className="bi-service-item">
                             <div className="bi-check-icon">✓</div>
-                            <span className="bi-service-text">Desarrollo de dashboards interactivos (Power BI)</span>
+                            <span className="bi-service-text">Roadmap de Transformación Analítica</span>
                         </div>
                         <div className="bi-service-item">
                             <div className="bi-check-icon">✓</div>
-                            <span className="bi-service-text">Integración de múltiples fuentes de datos</span>
+                            <span className="bi-service-text">Unificación de Fuentes de Verdad (Single Source of Truth)</span>
                         </div>
                         <div className="bi-service-item">
                             <div className="bi-check-icon">✓</div>
-                            <span className="bi-service-text">Análisis de datos operativos y comerciales</span>
+                            <span className="bi-service-text">Tableros de Control Gerencial (C-Level Dashboards)</span>
                         </div>
                         <div className="bi-service-item">
                             <div className="bi-check-icon">✓</div>
-                            <span className="bi-service-text">Automatización de reportes gerenciales</span>
+                            <span className="bi-service-text">Automatización de Reporting Financiero / Operativo</span>
                         </div>
                         <div className="bi-service-item">
                             <div className="bi-check-icon">✓</div>
-                            <span className="bi-service-text">Visualización de KPIs en tiempo real</span>
+                            <span className="bi-service-text">Gobernanza y Calidad de Datos</span>
                         </div>
                         <div className="bi-service-item">
                             <div className="bi-check-icon">✓</div>
-                            <span className="bi-service-text">Soporte y mejora continua</span>
+                            <span className="bi-service-text">Capacitación en Lectura Estratégica de Datos</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* 5. TIPOS DE ANÁLISIS */}
-            <section className="bi-section-types">
-                <div className="bi-container">
-                    <h2 className="bi-section-title">Tipos de Análisis</h2>
-                    <div className="bi-types-grid">
-                        <div className="bi-type-card">
-                            <div className="bi-type-icon">
-                                {/* Descriptivo - Bar Chart */}
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" />
-                                </svg>
-                            </div>
-                            <h3>Descriptivo</h3>
-                            <p>¿Qué sucedió? Análisis histórico para entender el rendimiento pasado.</p>
-                        </div>
-                        <div className="bi-type-card">
-                            <div className="bi-type-icon">
-                                {/* Diagnóstico - Magnifying Glass */}
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                                </svg>
-                            </div>
-                            <h3>Diagnóstico</h3>
-                            <p>¿Por qué sucedió? Profundización en las causas raíz de los resultados.</p>
-                        </div>
-                        <div className="bi-type-card">
-                            <div className="bi-type-icon">
-                                {/* Predictivo - Line Chart */}
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
-                                </svg>
-                            </div>
-                            <h3>Predictivo</h3>
-                            <p>¿Qué sucederá? Proyecciones basadas en tendencias y patrones.</p>
-                        </div>
-                        <div className="bi-type-card">
-                            <div className="bi-type-icon">
-                                {/* Prescriptivo - Lightbulb */}
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
-                                </svg>
-                            </div>
-                            <h3>Prescriptivo</h3>
-                            <p>¿Qué debemos hacer? Recomendaciones para optimizar el futuro.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 6. BENEFICIOS */}
+            {/* 7. BENEFICIOS (REFORZADOS) */}
             <section className="bi-section-benefits">
                 <div className="bi-container">
-                    <h2 className="bi-section-title light" style={{ marginBottom: '20px' }}>Beneficios para su Empresa</h2>
+                    <h2 className="bi-section-title light" style={{ marginBottom: '20px' }}>Valor para la Organización</h2>
                     <div className="bi-benefits-grid">
                         <div className="bi-benefit-item">
                             <span className="bi-benefit-icon">
-                                {/* Decisiones basadas en datos - Check Badge */}
+                                {/* Rentabilidad */}
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
                                 </svg>
                             </span>
-                            Decisiones basadas en datos
+                            Certeza Financiera
                         </div>
                         <div className="bi-benefit-item">
                             <span className="bi-benefit-icon">
-                                {/* Mayor control del negocio - Sliders */}
+                                {/* Control */}
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
                                 </svg>
                             </span>
-                            Mayor control del negocio
+                            Visión Unificada
                         </div>
                         <div className="bi-benefit-item">
                             <span className="bi-benefit-icon">
-                                {/* Ahorro de tiempo en reportes - Clock */}
+                                {/* Agilidad */}
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
                             </span>
-                            Ahorro de tiempo en reportes
+                            Velocidad de Reacción
                         </div>
                         <div className="bi-benefit-item">
                             <span className="bi-benefit-icon">
-                                {/* Visibilidad en tiempo real - Eye */}
+                                {/* Visibilidad */}
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                 </svg>
                             </span>
-                            Visibilidad en tiempo real
+                            Transparencia Total
                         </div>
                         <div className="bi-benefit-item">
                             <span className="bi-benefit-icon">
-                                {/* Mejora del rendimiento operativo - Rocket */}
+                                {/* Performance */}
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
                                 </svg>
                             </span>
-                            Mejora del rendimiento operativo
+                            Excelencia Operativa
                         </div>
                         <div className="bi-benefit-item">
                             <span className="bi-benefit-icon">
-                                {/* Información centralizada - Folder */}
+                                {/* Information */}
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
                                 </svg>
                             </span>
-                            Información centralizada
+                            Propiedad del Dato
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* 7. TECNOLOGÍA */}
+            {/* 8. TECNOLOGÍA CON ENFOQUE DE SEGURIDAD */}
             <section className="bi-section-tech">
                 <div className="bi-container">
                     <div className="bi-tech-content">
-                        <h2 className="bi-section-title">Tecnología y Herramientas</h2>
+                        <h2 className="bi-section-title">Infraestructura Segura y Escalable</h2>
                         <p style={{ fontSize: '1.1rem', color: '#64748b' }}>
-                            Utilizamos las herramientas líderes del mercado para garantizar potencia, seguridad y escalabilidad en sus análisis.
+                            Garantizamos la integridad y confidencialidad de su información utilizando estándares de seguridad empresarial.
+                            Su data, siempre protegida y disponible.
                         </p>
                         <div className="bi-tech-list">
+                            <div className="bi-tech-item">Seguridad Enterprise</div>
+                            <div className="bi-tech-item">Roles y Permisos</div>
+                            <div className="bi-tech-item">Encriptación de Datos</div>
                             <div className="bi-tech-item">Microsoft Power BI</div>
-                            <div className="bi-tech-item">SQL Server</div>
-                            <div className="bi-tech-item">Excel Avanzado</div>
-                            <div className="bi-tech-item">Azure Data</div>
+                            <div className="bi-tech-item">Azure Cloud</div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* 8. CTA FINAL */}
+            {/* 9. CTA FINAL (CONSULTIVO) */}
             <section className="bi-section-cta" style={{ backgroundImage: `url(${heroImage})` }}>
                 <div className="bi-cta-overlay"></div>
                 <div className="bi-cta-content">
-                    <h2>Transforma tus datos en ventaja competitiva</h2>
-                    <a href="/#contactanos" className="bi-btn-cta">SOLICITAR DIAGNÓSTICO DE BI</a>
+                    <h2>Conozca el estado real de su información</h2>
+                    <p style={{ fontSize: '1.2rem', marginBottom: '30px', maxWidth: '700px', margin: '0 auto 30px auto' }}>
+                        Lo ayudamos a tomar decisiones con datos, no con suposiciones. Agende una sesión estratégica inicial.
+                    </p>
+                    <a href="/#contactanos" className="bi-btn-cta">SOLICITAR CONSULTORÍA</a>
                 </div>
             </section>
         </div>

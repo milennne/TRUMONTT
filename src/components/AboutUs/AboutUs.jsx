@@ -12,6 +12,8 @@ const AboutUs = () => {
                     <div className="container about-us-content">
                         <span className="small-title">Construyendo tus sueños</span>
                         <h2 className="main-title">¿Quiénes Somos?</h2>
+                        {/* Hidden SEO Heading for Brand Association */}
+                        <h1 className="sr-only">Trumont - Constructora y Gestión Inmobiliaria</h1>
                         <p className="description-text">
                             Somos una firma peruana con una destacada trayectoria en diversos sectores,
                             ofreciendo una amplia gama de servicios que abarcan desde construcción hasta

@@ -9,27 +9,27 @@ import imgBusiness from '../../assets/business.png';
 
 const HeroCarousel = () => {
     const slides = [
-         {
+        {
             src: imgGestion,
-            alt: 'Gestión Inmobiliaria',
+            alt: 'Gestión Inmobiliaria Trumontt (Trumont)',
             title: 'Gestión Inmobiliaria',
             subtitle: 'Garantizando el Mantenimiento y Funcionamiento Óptimo de tus Inmuebles'
         },
         {
             src: imgConstruccion,
-            alt: 'Construcción',
+            alt: 'Proyectos de Construcción Trumont',
             title: 'Construcción',
             subtitle: 'Construyendo Futuro con Ingeniería de Precisión y Proyectos Sólidos'
         },
         {
             src: imgConsultorias,
-            alt: 'Consultorías',
+            alt: 'Consultorías Estratégicas Trumontt Group',
             title: 'Consultorías',
             subtitle: 'Asesoría Estratégica que Impulsa Resultados y Crecimiento Asegurado'
         },
         {
             src: imgBusiness,
-            alt: 'Business Intelligence',
+            alt: 'Business Intelligence y Analítica Trumont',
             title: 'Business Intelligence',
             subtitle: 'Transformando Datos en Estrategias para Decisiones Empresariales Efectivas'
         },

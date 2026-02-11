@@ -85,9 +85,20 @@
 }
 
 .benefit-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e3a8a;
+    /* Dark Blue for clearer visibility */
+}
+
+.benefit-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke-width: 1.5;
 }
 
 .benefit-card h3 {

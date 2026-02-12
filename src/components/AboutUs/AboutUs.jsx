@@ -15,8 +15,7 @@ const AboutUs = () => {
                         {/* Hidden SEO Heading for Brand Association */}
                         <h1 className="sr-only">Trumont - Constructora y Gestión Inmobiliaria</h1>
                         <p className="description-text">
-                            Trumontt Group, también conocida como Trumont en el sector construcción en Perú, 
-                            es una firma peruana con una destacada trayectoria en diversos sectores,
+                            Trumontt Group, también conocida como Trumont, es una firma peruana con una destacada trayectoria en diversos sectores,
                             ofreciendo una amplia gama de servicios que abarcan desde construcción hasta
                             consultoría y el mercado inmobiliario. Con un equipo de profesionales altamente
                             capacitados y comprometidos con la excelencia, brindamos soluciones integrales

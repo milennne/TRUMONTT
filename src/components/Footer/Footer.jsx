@@ -31,7 +31,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <span className="icon">📞</span>
-                                <a href="tel:+51945609129" style={{ color: 'inherit', textDecoration: 'none' }}>+51 927 964 495</a>
+                                <a href="tel:+51945609129" style={{ color: 'inherit', textDecoration: 'none' }}>+51 945 609 129</a>
                             </li>
                             <li>
                                 <span className="icon">✉️</span>
